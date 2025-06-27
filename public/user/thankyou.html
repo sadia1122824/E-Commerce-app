@@ -1,0 +1,1866 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="light" data-pwa="true">
+<!-- Mirrored from cartzilla-html.createx.studio/checkout-v2-thankyou.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Apr 2025 06:02:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <!-- SEO Meta Tags -->
+    <title>Cartzilla | Checkout v.2 - Thank You Page</title>
+    <meta name="description" content="Cartzilla - Multipurpose E-Commerce Bootstrap HTML Template">
+    <meta name="keywords" content="online shop, e-commerce, online store, market, multipurpose, product landing, cart, checkout, ui kit, light and dark mode, bootstrap, html5, css3, javascript, gallery, slider, mobile, pwa">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <link rel="icon" type="image/png" href="../user/assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./user/assets/app-icons/icon-180x180.png">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="./user/assets/js/theme-switcher.js"></script>
+
+    <!-- Preloaded local web font (Inter) -->
+    <link rel="preload" href="./user/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <!-- Font icons -->
+    <link rel="preload" href="./user/assets/icons/cartzilla-icons.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="./user/assets/icons/cartzilla-icons.min.css">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="./user/assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./user/assets/vendor/choices.js/choices.min.css">
+
+    <!-- Bootstrap + Theme styles -->
+    <link rel="preload" href="./user/assets/css/theme.min.css" as="style">
+    <link rel="preload" href="./user/assets/css/theme.rtl.min.css" as="style">
+    <link rel="stylesheet" href="./user/assets/css/theme.min.css" id="theme-styles">
+
+    <!-- Customizer -->
+    <script src="./user/assets/js/customizer.min.js"></script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Customizer offcanvas -->
+    <div class="offcanvas offcanvas-end" id="customizer" tabindex="-1">
+      <div class="offcanvas-header border-bottom">
+        <h4 class="h5 offcanvas-title">Customize theme</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <!-- Customizer settings -->
+        <div class="customizer-collapse collapse show" id="customizerSettings">
+
+          <!-- Colors -->
+          <div class="pb-4 mb-2">
+            <div class="d-flex align-items-center mb-3">
+              <i class="ci-paint text-body-tertiary fs-5 me-2"></i>
+              <h5 class="fs-lg mb-0">Colors</h5>
+            </div>
+            <div class="row row-cols-2 g-3" id="theme-colors">
+              <div class="col">
+                <h6 class="fs-sm mb-2">Primary</h6>
+                <div class="color-swatch d-flex border rounded gap-3 p-2" id="theme-primary" data-color-labels="[&quot;theme-primary&quot;, &quot;primary&quot;, &quot;primary-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#f55266">
+                  <label for="primary" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #f55266"></label>
+                  <input type="color" class="visually-hidden" id="primary" value="#f55266">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Success</h6>
+                <div class="color-swatch d-flex border rounded gap-3 p-2" id="theme-success" data-color-labels="[&quot;theme-success&quot;, &quot;success&quot;, &quot;success-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#33b36b">
+                  <label for="success" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #33b36b"></label>
+                  <input type="color" class="visually-hidden" id="success" value="#33b36b">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Warning</h6>
+                <div class="color-swatch d-flex border rounded gap-3 p-2" id="theme-warning" data-color-labels="[&quot;theme-warning&quot;, &quot;warning&quot;, &quot;warning-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#fc9231">
+                  <label for="warning" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #fc9231"></label>
+                  <input type="color" class="visually-hidden" id="warning" value="#fc9231">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Danger</h6>
+                <div class="color-swatch d-flex border rounded gap-2 p-2" id="theme-danger" data-color-labels="[&quot;theme-danger&quot;, &quot;danger&quot;, &quot;danger-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#f03d3d">
+                  <label for="danger" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #f03d3d"></label>
+                  <input type="color" class="visually-hidden" id="danger" value="#f03d3d">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Info</h6>
+                <div class="color-swatch d-flex border rounded gap-2 p-2" id="theme-info" data-color-labels="[&quot;theme-info&quot;, &quot;info&quot;, &quot;info-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#2f6ed5">
+                  <label for="info" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #2f6ed5"></label>
+                  <input type="color" class="visually-hidden" id="info" value="#2f6ed5">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direction -->
+          <div class="pb-4 mb-2">
+            <div class="d-flex align-items-center pb-1 mb-2">
+              <i class="ci-sort text-body-tertiary fs-lg me-2" style="transform: rotate(90deg)"></i>
+              <h5 class="fs-lg mb-0">Direction</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between border rounded p-3">
+              <div class="me-3">
+                <h6 class="mb-1">RTL</h6>
+                <p class="fs-sm mb-0">Change text direction</p>
+              </div>
+              <div class="form-check form-switch m-0">
+                <input type="checkbox" class="form-check-input" role="switch" id="rtl-switch">
+              </div>
+            </div>
+            <div class="alert alert-info p-2 mt-2 mb-0">
+              <div class="d-flex text-body-emphasis fs-xs py-1 pe-1">
+                <i class="ci-info text-info fs-lg mb-2 mb-sm-0" style="margin-top: .125rem"></i>
+                <div class="ps-2">To switch the text direction of your webpage from LTR to RTL, please consult the detailed instructions provided in the relevant section of our documentation.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Border width -->
+          <div class="pb-4 mb-2">
+            <div class="d-flex align-items-center pb-1 mb-2">
+              <i class="ci-menu text-body-tertiary fs-lg me-2"></i>
+              <h5 class="fs-lg mb-0">Border width, px</h5>
+            </div>
+            <div class="slider-input d-flex align-items-center gap-3 border rounded p-3" id="border-input">
+              <input type="range" class="form-range" min="0" max="10" step="1" value="1">
+              <input type="number" class="form-control" id="border-width" min="0" max="10" value="1" style="max-width: 5.5rem">
+            </div>
+          </div>
+
+          <!-- Rounding -->
+          <div class="d-flex align-items-center pb-1 mb-2">
+            <i class="ci-maximize text-body-tertiary fs-lg me-2"></i>
+            <h5 class="fs-lg mb-0">Rounding, rem</h5>
+          </div>
+          <div class="slider-input d-flex align-items-center gap-3 border rounded p-3">
+            <input type="range" class="form-range" min="0" max="5" step=".05" value="0.5">
+            <input type="number" class="form-control" id="border-radius" min="0" max="5" step=".05" value="0.5" style="max-width: 5.5rem">
+          </div>
+        </div>
+
+        <!-- Customizer code -->
+        <div class="customizer-collapse collapse" id="customizerCode">
+          <div class="nav mb-3">
+            <a class="nav-link animate-underline fs-base p-0" href=".html" data-bs-toggle="collapse" aria-expanded="true" aria-controls="customizerSettings customizerCode">
+              <i class="ci-chevron-left fs-lg ms-n1 me-1"></i>
+              <span class="animate-target">Back to settings</span>
+            </a>
+          </div>
+          <p class="fs-sm pb-1">To apply the provided styles to your webpage, enclose them within a <code>&lt;style&gt;</code> tag and insert this tag into the <code>&lt;head&gt;</code> section of your HTML document after the following link to the main stylesheet:<br><code>&lt;link href="assets/css/theme.min.css"&gt;</code></p>
+          <div class="position-relative bg-body-tertiary rounded overflow-hidden pt-3">
+            <div class="position-absolute top-0 start-0 w-100 p-3">
+              <button type="button" class="btn btn-sm btn-outline-dark w-100" data-copy-text-from="#generated-styles" data-done-label="Code copied">
+                <i class="ci-copy fs-sm me-1"></i>
+                Copy code
+              </button>
+            </div>
+            <pre class="text-wrap bg-transparent border-0 fs-xs text-body-emphasis p-4 pt-5" id="generated-styles"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offcanvas footer (Action buttons) -->
+      <div class="offcanvas-header border-top gap-3 d-none" id="customizer-btns">
+        <button type="button" class="btn btn-lg btn-secondary w-100 fs-sm" id="customizer-reset">
+          <i class="ci-trash fs-lg me-2 ms-n1"></i>
+          Reset
+        </button>
+        <button class="btn btn-lg btn-primary hiding-collapse-toggle w-100 fs-sm collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".customizer-collapse" aria-expanded="false" aria-controls="customizerSettings customizerCode">
+          <i class="ci-code fs-lg me-2 ms-n1"></i>
+          Show code
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Shopping cart offcanvas -->
+    <div class="offcanvas offcanvas-end pb-sm-2 px-sm-2" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel" style="width: 500px">
+
+      <!-- Header -->
+      <div class="offcanvas-header flex-column align-items-start py-3 pt-lg-4">
+        <div class="d-flex align-items-center justify-content-between w-100 mb-3 mb-lg-4">
+          <h4 class="offcanvas-title" id="shoppingCartLabel">Shopping cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-success text-dark-emphasis fs-sm border-0 rounded-4 mb-0" role="alert">
+          Congratulations 🎉 You have added more than <span class="fw-semibold">$50</span> to your cart. <span class="fw-semibold">Delivery is free</span> for you!
+        </div>
+      </div>
+
+      <!-- Items -->
+      <div class="offcanvas-body d-flex flex-column gap-4 pt-2">
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="position-relative flex-shrink-0" href="shop-product-grocery.html">
+            <span class="badge text-bg-danger position-absolute top-0 start-0 z-2 mt-0 ms-0">-$2.79</span>
+            <img src="./user/assets/img/shop/grocery/thumbs/01.png" width="110" alt="Thumbnail">
+          </a>
+          <div class="w-100 ps-3">
+            <h5 class="fs-sm fw-medium lh-base mb-2">
+              <a class="hover-effect-underline" href="shop-product-grocery.html">Fresh orange Klementina, Spain</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$3.12</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-pill">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="3" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-grocery.html">
+            <img src="./user/assets/img/shop/grocery/thumbs/02.png" width="110" alt="Thumbnail">
+          </a>
+          <div class="w-100 ps-3">
+            <h5 class="fs-sm fw-medium lh-base mb-2">
+              <a class="hover-effect-underline" href="shop-product-grocery.html">Pesto sauce Barilla with basil, Italy</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$3.95</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-pill">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="1" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-grocery.html">
+            <img src="./user/assets/img/shop/grocery/thumbs/03.png" width="110" alt="Thumbnail">
+          </a>
+          <div class="w-100 ps-3">
+            <h5 class="fs-sm fw-medium lh-base mb-2">
+              <a class="hover-effect-underline" href="shop-product-grocery.html">Steak salmon fillet with rosmary</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$27.00</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-pill">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="2" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-grocery.html">
+            <img src="./user/assets/img/shop/grocery/thumbs/04.png" width="110" alt="Thumbnail">
+          </a>
+          <div class="w-100 ps-3">
+            <h5 class="fs-sm fw-medium lh-base mb-2">
+              <a class="hover-effect-underline" href="shop-product-grocery.html">Sprite soda lemon lime, can</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$0.80</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-pill">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="2" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="offcanvas-header flex-column align-items-start">
+        <div class="d-flex align-items-center justify-content-between w-100 mb-3 mb-md-4">
+          <span class="text-light-emphasis">Subtotal:</span>
+          <span class="h6 mb-0">$68.91</span>
+        </div>
+        <div class="d-flex w-100 gap-3">
+          <a class="btn btn-lg btn-secondary w-100 rounded-pill" href="checkout-v2-cart.html">View cart</a>
+          <a class="btn btn-lg btn-primary w-100 rounded-pill" href="checkout-v2-delivery.html">Checkout</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Delivey options offcanvas -->
+    <div class="offcanvas offcanvas-end pb-sm-2 px-sm-2" id="deliveryOptions" tabindex="-1" aria-labelledby="deliveryOptionsLabel" style="width: 500px">
+
+      <!-- Header with nav tabs -->
+      <div class="offcanvas-header flex-column align-items-start py-3 pt-lg-4">
+        <div class="d-flex align-items-center justify-content-between w-100 pb-xl-1 mb-4">
+          <h4 class="offcanvas-title" id="deliveryOptionsLabel">Delivery options</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <ul class="nav nav-pills nav-justified w-100" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button type="button" class="nav-link active" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery-tab-pane" role="tab" aria-controls="delivery-tab-pane" aria-selected="true">
+              <i class="ci-shopping-bag fs-base ms-n1 me-2"></i>
+              Delivery
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button type="button" class="nav-link" id="pickup-tab" data-bs-toggle="tab" data-bs-target="#pickup-tab-pane" role="tab" aria-controls="pickup-tab-pane" aria-selected="false">
+              <i class="ci-box fs-base ms-n1 me-2"></i>
+              Pickup
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="offcanvas-body tab-content py-2 py-sm-3">
+
+        <!-- Delivery tab -->
+        <div class="tab-pane fade show active" id="delivery-tab-pane" role="tabpanel" aria-labelledby="delivery-tab">
+
+          <!-- Address options collapse -->
+          <div class="collapse delivery-address show" id="deliveryAddressOptions">
+            <div class="mt-n3">
+              <div class="form-check border-bottom py-4 m-0">
+                <input type="radio" class="form-check-input" id="address-1" name="delivery-address" checked="">
+                <label for="address-1" class="form-check-label text-dark-emphasis fw-semibold">567 Cherry Lane Apt B12 Sacramento, 95829</label>
+              </div>
+              <div class="form-check border-bottom py-4 m-0">
+                <input type="radio" class="form-check-input" id="address-2" name="delivery-address">
+                <div class="d-flex w-100">
+                  <label for="address-2" class="form-check-label text-dark-emphasis me-3">1901 Thornridge Cir. Shiloh, Hawaii, 81063</label>
+                  <button type="button" class="btn-close fs-sm ms-auto" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove"></button>
+                </div>
+              </div>
+              <div class="form-check border-bottom py-4 m-0">
+                <input type="radio" class="form-check-input" id="address-3" name="delivery-address">
+                <div class="d-flex w-100">
+                  <label for="address-3" class="form-check-label text-dark-emphasis me-3">3517 W. Gray St. Utica, Pennsylvania, 57867</label>
+                  <button type="button" class="btn-close fs-sm ms-auto" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add new address collapse -->
+          <div class="collapse delivery-address" id="deliveryAddressAdd">
+            <div class="nav mb-4">
+              <a class="nav-link animate-underline p-0" href="-2.html" data-bs-toggle="collapse" aria-expanded="true" aria-controls="deliveryAddressOptions deliveryAddressAdd">
+                <i class="ci-chevron-left fs-lg ms-n1 me-1"></i>
+                <span class="animate-target">Back to my addresses</span>
+              </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-3 mb-lg-4">
+              <h5 class="h6 mb-0 me-3">Add an address to start ordering</h5>
+              <a class="btn btn-sm btn-outline-primary rounded-pill" href="#!">
+                <i class="ci-map-pin fs-base ms-n1 me-1"></i>
+                Find on map
+              </a>
+            </div>
+            <div class="mb-3 mb-lg-4">
+              <label class="form-label">State *</label>
+              <select class="form-select form-select-lg rounded-pill" data-select="{
+                &quot;classNames&quot;: {
+                  &quot;containerInner&quot;: [&quot;form-select&quot;, &quot;form-select-lg&quot;, &quot;rounded-pill&quot;]
+                }
+              }" aria-label="Large pill select">
+                <option value="">Select state</option>
+                <option value="Arizona">Arizona</option>
+                <option value="California">California</option>
+                <option value="Montana">Montana</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="Texas">Texas</option>
+              </select>
+            </div>
+            <div class="mb-3 mb-lg-4">
+              <label for="my-postcode" class="form-label">Postcode *</label>
+              <input type="text" class="form-control form-control-lg rounded-pill" id="my-postcode">
+            </div>
+            <div class="mb-3 mb-lg-4">
+              <label class="form-label">City *</label>
+              <select class="form-select form-select-lg rounded-pill" data-select="{
+                &quot;classNames&quot;: {
+                  &quot;containerInner&quot;: [&quot;form-select&quot;, &quot;form-select-lg&quot;, &quot;rounded-pill&quot;]
+                }
+              }" aria-label="Large pill select">
+                <option value="">Select city</option>
+                <option value="Austin">Austin</option>
+                <option value="Helena">Helena</option>
+                <option value="Sacramento">Sacramento</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Las Vegas">Las Vegas</option>
+                <option value="Phoenix">Phoenix</option>
+              </select>
+            </div>
+            <label for="my-address" class="form-label">Street address *</label>
+            <input type="text" class="form-control form-control-lg rounded-pill" id="my-address">
+          </div>
+
+          <!-- Add address collapse toggle -->
+          <div class="nav">
+            <a class="nav-link hiding-collapse-toggle animate-underline collapsed px-0 mt-4" href="-2.html" data-bs-toggle="collapse" aria-expanded="false" aria-controls="deliveryAddressOptions deliveryAddressAdd">
+              <span class="animate-target">Add delivery address</span>
+              <i class="ci-plus fs-base ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pickup tab -->
+        <div class="tab-pane fade" id="pickup-tab-pane" role="tabpanel" aria-labelledby="pickup-tab">
+
+          <!-- Pickup store options collapse -->
+          <div class="collapse pickup-options show" id="pickupStoreOptions">
+            <div class="mt-n3">
+              <div class="form-check border-bottom py-4 m-0">
+                <input type="radio" class="form-check-input" id="store-1" name="pickup-store" checked="">
+                <div>
+                  <div class="d-flex w-100 pb-2 mb-1">
+                    <label for="store-1" class="form-check-label text-dark-emphasis fw-semibold me-3">Sacramento Supercenter</label>
+                    <button type="button" class="btn-close fs-sm ms-auto" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove"></button>
+                  </div>
+                  <div class="fs-xs mb-2">8270 Delta Shores Cir S, Sacramento, CA 95832</div>
+                  <div class="fs-xs">Open: <span class="text-dark-emphasis fw-medium">07:00 - 22:00</span></div>
+                </div>
+              </div>
+              <div class="form-check border-bottom py-4 m-0">
+                <input type="radio" class="form-check-input" id="store-2" name="pickup-store">
+                <div>
+                  <div class="d-flex w-100 pb-2 mb-1">
+                    <label for="store-2" class="form-check-label text-dark-emphasis fw-semibold me-3">West Sacramento Supercenter</label>
+                    <button type="button" class="btn-close fs-sm ms-auto" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove"></button>
+                  </div>
+                  <div class="fs-xs mb-2">755 Riverpoint Ct, West Sacramento, CA 95605</div>
+                  <div class="fs-xs">Open: <span class="text-dark-emphasis fw-medium">07:00 - 21:00</span></div>
+                </div>
+              </div>
+              <div class="form-check border-bottom py-4 m-0">
+                <input type="radio" class="form-check-input" id="store-3" name="pickup-store">
+                <div>
+                  <div class="d-flex w-100 pb-2 mb-1">
+                    <label for="store-3" class="form-check-label text-dark-emphasis fw-semibold me-3">Rancho Cordova Supercenter</label>
+                    <button type="button" class="btn-close fs-sm ms-auto" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove"></button>
+                  </div>
+                  <div class="fs-xs mb-2">10655 Folsom Blvd, Rancho Cordova, CA 95670</div>
+                  <div class="fs-xs">Open: <span class="text-dark-emphasis fw-medium">08:00 - 23:00</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add new pickup store collapse -->
+          <div class="collapse pickup-options" id="pickupStoreAdd">
+            <div class="nav mb-4">
+              <a class="nav-link animate-underline p-0" href="-3.html" data-bs-toggle="collapse" aria-expanded="true" aria-controls="pickupStoreOptions pickupStoreAdd">
+                <i class="ci-chevron-left fs-lg ms-n1 me-1"></i>
+                <span class="animate-target">Back to my stores</span>
+              </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-3 mb-lg-4">
+              <h5 class="h6 mb-0 me-3">Select a suitable store</h5>
+              <a class="btn btn-sm btn-outline-primary rounded-pill" href="#!">
+                <i class="ci-map-pin fs-base ms-n1 me-1"></i>
+                Find on map
+              </a>
+            </div>
+            <div class="mb-3 mb-lg-4">
+              <label class="form-label">State *</label>
+              <select class="form-select form-select-lg rounded-pill" data-select="{
+                &quot;classNames&quot;: {
+                  &quot;containerInner&quot;: [&quot;form-select&quot;, &quot;form-select-lg&quot;, &quot;rounded-pill&quot;]
+                }
+              }" aria-label="Large pill select">
+                <option value="">Select state</option>
+                <option value="Arizona">Arizona</option>
+                <option value="California" selected="">California</option>
+                <option value="Montana">Montana</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="Texas">Texas</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">City *</label>
+              <select class="form-select form-select-lg rounded-pill" data-select="{
+                &quot;classNames&quot;: {
+                  &quot;containerInner&quot;: [&quot;form-select&quot;, &quot;form-select-lg&quot;, &quot;rounded-pill&quot;]
+                }
+              }" aria-label="Large pill select">
+                <option value="">Select city</option>
+                <option value="Austin">Austin</option>
+                <option value="Helena">Helena</option>
+                <option value="Sacramento" selected="">Sacramento</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Las Vegas">Las Vegas</option>
+                <option value="Phoenix">Phoenix</option>
+              </select>
+            </div>
+            <div class="fs-xs fw-medium text-uppercase text-body-secondary">Found stores:</div>
+            <div class="form-check border-bottom py-4 m-0">
+              <input type="radio" class="form-check-input" id="store-4" name="found-store">
+              <div>
+                <label for="store-4" class="form-check-label text-dark-emphasis fw-semibold pb-2 mb-1">Sacramento Supercenter</label>
+                <div class="fs-xs mb-2">8270 Delta Shores Cir S, Sacramento, CA 95832</div>
+                <div class="fs-xs">Open: <span class="text-dark-emphasis fw-medium">07:00 - 22:00</span></div>
+              </div>
+            </div>
+            <div class="form-check border-bottom py-4 m-0">
+              <input type="radio" class="form-check-input" id="store-5" name="found-store">
+              <div>
+                <label for="store-5" class="form-check-label text-dark-emphasis fw-semibold pb-2 mb-1">West Sacramento Supercenter</label>
+                <div class="fs-xs mb-2">755 Riverpoint Ct, West Sacramento, CA 95605</div>
+                <div class="fs-xs">Open: <span class="text-dark-emphasis fw-medium">07:00 - 21:00</span></div>
+              </div>
+            </div>
+            <div class="form-check border-bottom py-4 m-0">
+              <input type="radio" class="form-check-input" id="store-6" name="found-store">
+              <div>
+                <label for="store-6" class="form-check-label text-dark-emphasis fw-semibold pb-2 mb-1">Rancho Cordova Supercenter</label>
+                <div class="fs-xs mb-2">10655 Folsom Blvd, Rancho Cordova, CA 95670</div>
+                <div class="fs-xs">Open: <span class="text-dark-emphasis fw-medium">08:00 - 23:00</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add address collapse toggle -->
+          <div class="nav">
+            <a class="nav-link hiding-collapse-toggle animate-underline collapsed px-0 mt-4" href="-3.html" data-bs-toggle="collapse" aria-expanded="false" aria-controls="pickupStoreOptions pickupStoreAdd">
+              <span class="animate-target">Add store address</span>
+              <i class="ci-plus fs-base ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="offcanvas-header">
+        <button type="button" class="btn btn-lg btn-primary w-100 rounded-pill">Confirm address</button>
+      </div>
+    </div>
+
+
+    <!-- Site menu offcanvas -->
+    <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+      <div class="offcanvas-header py-3">
+        <h5 class="offcanvas-title" id="navbarNavLabel">Browse Cartzilla</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-0 pb-3">
+
+        <!-- Navbar nav -->
+        <div class="accordion" id="navigation">
+
+          <!-- Categories collapse visible on screens < 992px wide (lg breakpoint) -->
+          <div class="accordion-item border-0 d-lg-none">
+            <div class="accordion-header" id="headingCategories">
+              <button type="button" class="accordion-button animate-underline fw-medium collapsed py-2" data-bs-toggle="collapse" data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
+                <i class="ci-grid fs-lg me-2"></i>
+                <span class="d-block animate-target py-1">Categories</span>
+              </button>
+            </div>
+            <div class="accordion-collapse collapse" id="categoriesMenu" aria-labelledby="headingCategories" data-bs-parent="#navigation">
+              <div class="accordion-body pb-3">
+                <div class="dropdown-menu show position-static d-flex flex-column gap-4 shadow-none p-4">
+                  <div>
+                    <div class="h6">Bakery &amp; bread</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Bread</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Pastries</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Bakery cookies</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Cupcakes</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Buns &amp; rolls</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4">Meat products</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Fresh meat</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Processed meat</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Seafood</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Poultry products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Prepared meat</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div class="h6">Vegetables</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Leafy greens</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Root vegetables</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Allium vegetables</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Peppers and tomatoes</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Cruciferous</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Seasonal squashes</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Beans, peas &amp; lentils</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4">Sauces and ketchup</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Tomato-based sauces</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Salad dressing</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Hot sauces</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div class="h6">Fresh fruits</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Citrus fruits</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Berries</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Tropical fruits</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Stone fruits</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Exotic fruits</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Melons</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4">Italian dinner</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Pasta &amp; sauces</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Italian cheese</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Italian meats</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Desserts &amp; beverages</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div class="h6">Beverages</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Soft drinks</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Juices</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Sports &amp; energy drinks</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Tea and coffee</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Alcoholic beverages</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4">Dairy &amp; eggs</div>
+                    <ul class="nav flex-column gap-2 mt-n2">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Shop all</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Chees</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Milk &amp; yogurt</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Sour cream</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Eggs</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Butter &amp; margarine</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rest of the menu -->
+          <div class="accordion-item border-0">
+            <div class="accordion-header" id="headingHome">
+              <button type="button" class="accordion-button animate-underline fw-medium collapsed py-2" data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false" aria-controls="home">
+                <span class="d-block animate-target py-1">Home</span>
+              </button>
+            </div>
+            <div class="accordion-collapse collapse" id="home" aria-labelledby="headingHome" data-bs-parent="#navigation">
+              <div class="accordion-body pb-3">
+                <ul class="dropdown-menu show position-static shadow-none">
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-electronics.html">
+                      <span class="fw-medium">Electronics Store</span>
+                      <span class="d-block fs-xs text-body-secondary">Megamenu + Hero slider</span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-fashion-v1.html">
+                      <span class="fw-medium">Fashion Store v.1</span>
+                      <span class="d-block fs-xs text-body-secondary">Hero promo slider</span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-fashion-v2.html">
+                      <span class="fw-medium">Fashion Store v.2</span>
+                      <span class="d-block fs-xs text-body-secondary">Hero banner with hotspots</span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-furniture.html">
+                      <span class="fw-medium">Furniture Store</span>
+                      <span class="d-block fs-xs text-body-secondary">Fancy product carousel</span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-grocery.html">
+                      <span class="fw-medium">Grocery Store</span>
+                      <span class="d-block fs-xs text-body-secondary">Hero slider + Category cards</span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-marketplace.html">
+                      <span class="fw-medium">Marketplace</span>
+                      <span class="d-block fs-xs text-body-secondary">Multi-vendor, digital goods</span>
+                    </a>
+                  </li>
+                  <li class="hover-effect-opacity px-2 mx-n2">
+                    <a class="dropdown-item d-block mb-0" href="home-single-store.html">
+                      <span class="fw-medium">Single Product Store</span>
+                      <span class="d-block fs-xs text-body-secondary">Single product / mono brand</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-header" id="headingShop">
+              <button type="button" class="accordion-button animate-underline fw-medium collapsed py-2" data-bs-toggle="collapse" data-bs-target="#shop" aria-expanded="false" aria-controls="shop">
+                <span class="d-block animate-target py-1">Shop</span>
+              </button>
+            </div>
+            <div class="accordion-collapse collapse" id="shop" aria-labelledby="headingShop" data-bs-parent="#navigation">
+              <div class="accordion-body pb-3">
+                <div class="dropdown-menu show position-static shadow-none p-4">
+                  <div class="d-flex flex-column gap-4">
+                    <div style="min-width: 190px">
+                      <div class="h6 mb-2">Electronics Store</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-categories-electronics.html">Categories Page</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-electronics.html">Catalog with Side Filters</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-grocery.html">Product General Info</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-details-electronics.html">Product Details</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-reviews-electronics.html">Product Reviews</a>
+                        </li>
+                      </ul>
+                      <div class="h6 pt-4 mb-2">Fashion Store</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-fashion.html">Catalog with Side Filters</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-fashion.html">Product Page</a>
+                        </li>
+                      </ul>
+                      <div class="h6 pt-4 mb-2">Furniture Store</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-furniture.html">Catalog with Top Filters</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-furniture.html">Product Page</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div style="min-width: 190px">
+                      <div class="h6 mb-2">Grocery Store</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-grocery.html">Catalog with Side Filters</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-grocery.html">Product Page</a>
+                        </li>
+                      </ul>
+                      <div class="h6 pt-4 mb-2">Marketplace</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-catalog-marketplace.html">Catalog with Top Filters</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="shop-product-marketplace.html">Digital Product Page</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-marketplace.html">Cart / Checkout</a>
+                        </li>
+                      </ul>
+                      <div class="h6 pt-4 mb-2">Checkout v.1</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v1-cart.html">Shopping Cart</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v1-delivery-1.html">Delivery Info (Step 1)</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v1-delivery-2.html">Delivery Info (Step 2)</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v1-shipping.html">Shipping Address</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v1-payment.html">Payment</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v1-thankyou.html">Thank You Page</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div style="min-width: 190px">
+                      <div class="h6 mb-2">Checkout v.2</div>
+                      <ul class="nav flex-column gap-2 mt-0">
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v2-cart.html">Shopping Cart</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v2-delivery.html">Delivery Info</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v2-pickup.html">Pickup from Store</a>
+                        </li>
+                        <li class="d-flex w-100 pt-1">
+                          <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="checkout-v2-thankyou.html">Thank You Page</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-header" id="headingAccount">
+              <button type="button" class="accordion-button animate-underline fw-medium collapsed py-2" data-bs-toggle="collapse" data-bs-target="#account" aria-expanded="false" aria-controls="account">
+                <span class="d-block animate-target py-1">Account</span>
+              </button>
+            </div>
+            <div class="accordion-collapse collapse" id="account" aria-labelledby="headingAccount" data-bs-parent="#navigation">
+              <div class="accordion-body pb-3">
+                <ul class="dropdown-menu show position-static shadow-none">
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">Auth Pages</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="account-signin.html">Sign In</a></li>
+                      <li><a class="dropdown-item" href="account-signup.html">Sign Up</a></li>
+                      <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop User</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                      <li><a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                      <li><a class="dropdown-item" href="account-reviews.html">My Reviews</a></li>
+                      <li><a class="dropdown-item" href="account-info.html">Personal Info</a></li>
+                      <li><a class="dropdown-item" href="account-addresses.html">Addresses</a></li>
+                      <li><a class="dropdown-item" href="account-notifications.html">Notifications</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">Marketplace User</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="account-marketplace-dashboard.html">Dashboard</a></li>
+                      <li><a class="dropdown-item" href="account-marketplace-products.html">Products</a></li>
+                      <li><a class="dropdown-item" href="account-marketplace-sales.html">Sales</a></li>
+                      <li><a class="dropdown-item" href="account-marketplace-payouts.html">Payouts</a></li>
+                      <li><a class="dropdown-item" href="account-marketplace-purchases.html">Purchases</a></li>
+                      <li><a class="dropdown-item" href="account-marketplace-favorites.html">Favorites</a></li>
+                      <li><a class="dropdown-item" href="account-marketplace-settings.html">Settings</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <div class="accordion-header" id="headingPages">
+              <button type="button" class="accordion-button animate-underline fw-medium collapsed py-2" data-bs-toggle="collapse" data-bs-target="#pages" aria-expanded="false" aria-controls="pages">
+                <span class="d-block animate-target py-1">Pages</span>
+              </button>
+            </div>
+            <div class="accordion-collapse collapse" id="pages" aria-labelledby="headingPages" data-bs-parent="#navigation">
+              <div class="accordion-body pb-3">
+                <ul class="dropdown-menu show position-static shadow-none">
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="about-v1.html">About v.1</a></li>
+                      <li><a class="dropdown-item" href="about-v2.html">About v.2</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="blog-grid-v1.html">Grid View v.1</a></li>
+                      <li><a class="dropdown-item" href="blog-grid-v2.html">Grid View v.2</a></li>
+                      <li><a class="dropdown-item" href="blog-list.html">List View</a></li>
+                      <li><a class="dropdown-item" href="blog-single-v1.html">Single Post v.1</a></li>
+                      <li><a class="dropdown-item" href="blog-single-v2.html">Single Post v.2</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="contact-v1.html">Contact v.1</a></li>
+                      <li><a class="dropdown-item" href="contact-v2.html">Contact v.2</a></li>
+                      <li><a class="dropdown-item" href="contact-v3.html">Contact v.3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help Center</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="help-topics-v1.html">Help Topics v.1</a></li>
+                      <li><a class="dropdown-item" href="help-topics-v2.html">Help Topics v.2</a></li>
+                      <li><a class="dropdown-item" href="help-single-article-v1.html">Help Single Article v.1</a></li>
+                      <li><a class="dropdown-item" href="help-single-article-v2.html">Help Single Article v.2</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">404 Error</a>
+                    <ul class="dropdown-menu position-static transform-none shadow-none">
+                      <li><a class="dropdown-item" href="404-electronics.html">404 Electronics</a></li>
+                      <li><a class="dropdown-item" href="404-fashion.html">404 Fashion</a></li>
+                      <li><a class="dropdown-item" href="404-furniture.html">404 Furniture</a></li>
+                      <li><a class="dropdown-item" href="404-grocery.html">404 Grocery</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h6 fw-medium py-1 mb-0">
+          <a class="d-block animate-underline py-1" href="docs/installation.html">
+            <span class="d-inline-block animate-target py-1">Docs</span>
+          </a>
+        </div>
+        <div class="h6 fw-medium py-1 mb-0">
+          <a class="d-block animate-underline py-1" href="docs/typography.html">
+            <span class="d-inline-block animate-target py-1">Components</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Account button visible on screens < 768px wide (md breakpoint) -->
+      <div class="offcanvas-header flex-column align-items-start d-md-none">
+        <a class="btn btn-lg btn-outline-secondary w-100 rounded-pill" href="account-signin.html">
+          <i class="ci-user fs-lg ms-n1 me-2"></i>
+          Account
+        </a>
+      </div>
+    </nav>
+
+
+    <!-- Navigation bar (Page header) -->
+     <header class="navbar navbar-expand-lg navbar-sticky bg-body d-block z-fixed p-0" data-sticky-navbar="{&quot;offset&quot;: 500}">
+      <div class="container py-2 py-lg-3">
+        <div class="d-flex align-items-center gap-3">
+
+          <!-- Mobile offcanvas menu toggler (Hamburger) -->
+          <button type="button" class="navbar-toggler me-4 me-md-2" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Country slect visible on screens > 768px wide (md breakpoint) -->
+          <div class="dropdown d-none d-md-block nav">
+          
+         
+          </div>
+
+          <!-- City slect visible on screens > 768px wide (md breakpoint) -->
+        
+        </div>
+
+        <!-- Navbar brand (Logo) -->
+        <a class="navbar-brand fs-2 py-0 m-0 me-auto me-sm-n5" href="index-2.html">GlamVibe Store</a>
+
+        <!-- Button group -->
+        <div class="d-flex align-items-center">
+
+          <!-- Navbar stuck nav toggler -->
+          <button type="button" class="navbar-toggler d-none navbar-stuck-show me-3" data-bs-toggle="collapse" data-bs-target="#stuckNav" aria-controls="stuckNav" aria-expanded="false" aria-label="Toggle navigation in navbar stuck state">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Theme switcher (light/dark/auto) -->
+          <div class="dropdown">
+            <button type="button" class="theme-switcher btn btn-icon btn-lg btn-outline-secondary fs-lg border-0 rounded-circle animate-scale" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (light)">
+              <span class="theme-icon-active d-flex animate-target">
+                <i class="ci-sun"></i>
+              </span>
+            </button>
+            <ul class="dropdown-menu" style="--cz-dropdown-min-width: 9rem">
+              <li>
+                <button type="button" class="dropdown-item active" data-bs-theme-value="light" aria-pressed="true">
+                  <span class="theme-icon d-flex fs-base me-2">
+                    <i class="ci-sun"></i>
+                  </span>
+                  <span class="theme-label">Light</span>
+                  <i class="item-active-indicator ci-check ms-auto"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                  <span class="theme-icon d-flex fs-base me-2">
+                    <i class="ci-moon"></i>
+                  </span>
+                  <span class="theme-label">Dark</span>
+                  <i class="item-active-indicator ci-check ms-auto"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false">
+                  <span class="theme-icon d-flex fs-base me-2">
+                    <i class="ci-auto"></i>
+                  </span>
+                  <span class="theme-label">Auto</span>
+                  <i class="item-active-indicator ci-check ms-auto"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Search toggle button visible on screens < 992px wide (lg breakpoint) -->
+          <button type="button" class="btn btn-icon btn-lg fs-xl btn-outline-secondary border-0 rounded-circle animate-shake d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#searchBox" aria-controls="searchBox" aria-label="Toggle search bar">
+            <i class="ci-search animate-target"></i>
+          </button>
+
+          <!-- Account button visible on screens > 768px wide (md breakpoint) -->
+          <a class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-shake d-none d-md-inline-flex" href="account-signin.html">
+            <i class="ci-user animate-target"></i>
+            <span class="visually-hidden">Account</span>
+          </a>
+
+          <!-- Wishlist button visible on screens > 768px wide (md breakpoint) -->
+          <a class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-pulse d-none d-md-inline-flex" href="#!">
+            <i class="ci-heart animate-target"></i>
+            <span class="visually-hidden">Wishlist</span>
+          </a>
+
+          <!-- Cart button -->
+          <button type="button" class="btn btn-icon btn-lg fs-xl btn-outline-secondary position-relative border-0 rounded-circle animate-scale" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart" aria-label="Shopping cart">
+            <span class="position-absolute top-0 start-100 badge fs-xs text-bg-primary rounded-pill mt-1 ms-n4 z-2" style="--cz-badge-padding-y: .25em; --cz-badge-padding-x: .42em">3</span>
+            <i class="ci-shopping-bag animate-target me-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+      <div class="collapse navbar-stuck-hide" id="stuckNav">
+        <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header py-3">
+            <h5 class="offcanvas-title" id="navbarNavLabel">Browse Cartzilla</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <!-- Country and City slects visible on screens < 768px wide (md breakpoint) -->
+          <div class="offcanvas-header gap-3 d-md-none pt-0 pb-3">
+            <div class="dropdown nav">
+              <a class="nav-link dropdown-toggle py-1 px-0" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Country select: USA">
+                <div class="ratio ratio-1x1" style="width: 20px">
+                  <img src="./user/assets/img/flags/en-us.png" alt="USA">
+                </div>
+              </a>
+              <ul class="dropdown-menu fs-sm" style="--cz-dropdown-spacer: .5rem">
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/en-uk.png" class="flex-shrink-0 me-2" width="20" alt="United Kingdom">
+                    United Kingdom
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/fr.png" class="flex-shrink-0 me-2" width="20" alt="France">
+                    France
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/de.png" class="flex-shrink-0 me-2" width="20" alt="Deutschland">
+                    Deutschland
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/it.png" class="flex-shrink-0 me-2" width="20" alt="Italia">
+                    Italia
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown nav">
+              <a class="nav-link animate-underline dropdown-toggle fw-normal py-1 px-0" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="animate-target">Washington</span>
+              </a>
+              <ul class="dropdown-menu fs-sm" style="--cz-dropdown-spacer: .5rem">
+                <li><a class="dropdown-item" href="#!">Chicago</a></li>
+                <li><a class="dropdown-item" href="#!">Los Angeles</a></li>
+                <li><a class="dropdown-item" href="#!">New York</a></li>
+                <li><a class="dropdown-item" href="#!">Philadelphia</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offcanvas-body pt-1 pb-3 py-lg-0">
+            <div class="container pb-lg-2 px-0 px-lg-3">
+
+              <div class="position-relative d-lg-flex align-items-center justify-content-between">
+
+                <!-- Categories mega menu -->
+                <div class="navbar-nav">
+                  <div class="dropdown position-static pb-lg-2">
+                    <button type="button" class="nav-link animate-underline fw-semibold text-uppercase ps-0" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">
+                      <i class="ci-menu fs-lg me-2"></i>
+                      <span class="animate-target">Categories</span>
+                    </button>
+                    <div class="dropdown-menu w-100 p-4 px-xl-5" style="--cz-dropdown-spacer: .75rem">
+
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-underline justify-content-lg-center mt-n2 mt-lg-0 mb-4" role="tablist">
+                      
+                      
+                       
+                          <li class="nav-item" role="presentation">
+                          <button type="button" class="nav-link text-uppercase" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids-tab-pane" role="tab" aria-controls="kids-tab-pane" aria-selected="false">
+                            Woman related Products
+                          </button>
+                        </li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content pb-xl-4">
+
+                        <!-- dress's tab -->
+                        <div class="tab-pane fade show active" id="womens-tab-pane" role="tabpanel" aria-labelledby="womens-tab">
+                          <div class="row g-4">
+                            <div class="col-lg-2">
+                              <a class="d-inline-flex animate-underline h6 text-dark-emphasis text-decoration-none mb-2" href="/shopnow_dress">
+                                <span class="animate-target">Clothing</span>
+                              </a>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Shirts &amp; Tops</a>
+                                </li>
+                               
+                           
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Sweatshirts</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Dresses</a>
+                                </li>
+                              
+                               
+                              </ul>
+                            </div>
+                            <div class="col-lg-2">
+                              <a class="d-inline-flex animate-underline h6 text-dark-emphasis text-decoration-none mb-2" href="/shopnow_Shows">
+                                <span class="animate-target">Shoes</span>
+                              </a>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Boots</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Sandals</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Heels</a>
+                                </li>
+                              
+                               
+                               
+                            
+                              </ul>
+                            </div>
+                            <div class="col-lg-2">
+                              <a class="d-inline-flex animate-underline h6 text-dark-emphasis text-decoration-none mb-2" href="/shopnow_MakeUp">
+                                <span class="animate-target">Makeup</span>
+                              </a>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">Lipstics</a>
+                                </li>
+                               
+                              
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">eyes Makeup</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">Blusher</a>
+                                </li>
+                              
+                              
+                              </ul>
+                            </div>
+                            <div class="col-lg-2">
+                              <div class="h6 mb-2">Jewllery</div>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">earings</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Rings</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Lockets</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Bangles</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block" data-bs-theme="light">
+                              <div class="position-relative d-flex flex-column h-100 rounded-4 overflow-hidden p-4">
+                                <div class="position-relative d-flex flex-column justify-content-between h-100 z-2 pt-xl-2 ps-xl-2">
+                                  <div class="h4 lh-base">Women's<br>Heels<br>Collection</div>
+                                  <div>
+                                    <a class="btn btn-sm btn-dark stretched-link" href="/shopnow_Shows" data-bs-theme="light">Shop now</a>
+                                  </div>
+                                </div>
+                                <img src="./user/assets/img/mega-menu/fashion/01.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rtl-flip" alt="Image">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Men's tab -->
+                     
+
+                        <!-- Kids' tab -->
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navbar nav -->
+                <ul class="navbar-nav position-relative me-xl-n5">
+                  <li >
+                    <a  class="nav-link dropdown-toggle " aria-current="page" href="/home_page" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Home</a>
+                    
+                  </li>
+                 
+                  <li class="nav-item dropdown pb-lg-2 me-lg-n1 me-xl-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">Account</a>
+                    <ul class="dropdown-menu" style="--cz-dropdown-spacer: .75rem">
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Auth Pages</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="account-signin.html">Sign In</a></li>
+                          <li><a class="dropdown-item" href="account-signup.html">Sign Up</a></li>
+                         
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                       
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                          <li><a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+                          <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                          <li><a class="dropdown-item" href="account-reviews.html">My Reviews</a></li>
+                          <li><a class="dropdown-item" href="account-info.html">Personal Info</a></li>
+                          <li><a class="dropdown-item" href="account-addresses.html">Addresses</a></li>
+                          <li><a class="dropdown-item" href="account-notifications.html">Notifications</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                       
+                    
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown pb-lg-2 me-lg-n1 me-xl-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" style="--cz-dropdown-spacer: .75rem">
+                      <li class="dropend">
+                        <a  href="#!" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">About</a>
+                        
+                      </li>
+                      <li class="dropend">
+                        <a  href="/blog_page" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Blog</a>
+                     
+                      </li>
+                      <li class="dropend">
+                        <a  href="/contact_page" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Contact</a>
+                       
+                      </li>
+                     
+                      
+                     
+                    </ul>
+                  </li>
+                 
+                  
+                </ul>
+
+                <!-- Search toggle visible on screens > 991px wide (lg breakpoint) -->
+                <button type="button" class="btn btn-outline-secondary justify-content-start w-100 px-3 mb-lg-2 ms-3 d-none d-lg-inline-flex" style="max-width: 240px" data-bs-toggle="offcanvas" data-bs-target="#searchBox" aria-controls="searchBox">
+                  <i class="ci-search fs-base ms-n1 me-2"></i>
+                  <span class="text-body-tertiary fw-normal">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Account and Wishlist buttons visible on screens < 768px wide (md breakpoint) -->
+          <div class="offcanvas-header border-top px-0 py-3 mt-3 d-md-none">
+            <div class="nav nav-justified w-100">
+              <a class="nav-link border-end" href="account-signin.html">
+                <i class="ci-user fs-lg opacity-60 me-2"></i>
+                Account
+              </a>
+              <a class="nav-link" href="#!">
+                <i class="ci-heart fs-lg opacity-60 me-2"></i>
+                Wishlist
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Page content -->
+    <main class="content-wrapper">
+
+      <!-- Thank you message -->
+      <section class="container pt-3 pt-sm-4 pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+        <div class="position-relative overflow-hidden rounded-5 p-4 p-sm-5" style="background-color: var(--cz-success-border-subtle)">
+          <div class="position-relative z-2 text-center py-4 py-md-5 my-md-2 my-lg-5 mx-auto" style="max-width: 536px">
+            <h1 class="pt-xl-4 mb-4">Thank you for your order!</h1>
+            <p class="text-dark-emphasis pb-3 pb-sm-4">Your order <span class="fw-semibold">#234000</span> accepted and will be processed shortly. Expect our courier <span class="fw-semibold">today (Sunday, May 9) at 12:00 - 14:00.</span></p>
+            <a class="btn btn-lg btn-dark rounded-pill mb-xl-4" href="/home_page">Continue shopping</a>
+          </div>
+          <img src="./user/assets/img/shop/grocery/thankyou-bg-1.png" class="animate-up-down position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Background image">
+          <img src="./user/assets/img/shop/grocery/thankyou-bg-2.png" class="animate-down-up position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Background image">
+        </div>
+      </section>
+
+
+      <!-- Similar products carousel -->
+      <section class="container pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+        <h2 class="h3 text-center mb-4">You may also like</h2>
+        <!-- Slider -->
+        <div class="swiper" data-swiper="{
+          &quot;slidesPerView&quot;: 2,
+          &quot;spaceBetween&quot;: 24,
+          &quot;pagination&quot;: {
+            &quot;el&quot;: &quot;.swiper-pagination&quot;,
+            &quot;clickable&quot;: true
+          },
+          &quot;breakpoints&quot;: {
+            &quot;500&quot;: {
+              &quot;slidesPerView&quot;: 3
+            },
+            &quot;768&quot;: {
+              &quot;slidesPerView&quot;: 4
+            },
+            &quot;1100&quot;: {
+              &quot;slidesPerView&quot;: 5
+            }
+          }
+        }">
+          <div class="swiper-wrapper">
+
+            <!-- Product -->
+            <div class="swiper-slide h-auto">
+              <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                <div class="position-relative z-2">
+                  <span class="badge text-bg-danger position-absolute top-0 start-0 z-2 mt-1 mt-sm-2 ms-1 ms-sm-2">-30%</span>
+                  <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                    <i class="ci-heart animate-target"></i>
+                  </button>
+                  <a class="d-block p-2 p-lg-3" href="home_page">
+                    <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                      <img src="https://i.pinimg.com/236x/5a/80/20/5a802045a672e71942dcf048e012a6e0.jpg" alt="Image">
+                    </div>
+                  </a>
+                  <div class="position-absolute w-100 start-0 bottom-0">
+                    <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                      <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                        <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                          <i class="ci-minus fs-sm"></i>
+                        </button>
+                        <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        <button type="button" class="product-card-button btn btn-icon btn-sm btn-secondary ms-auto" data-increment="" aria-label="Increment quantity">
+                          <span data-count-input-value=""></span>
+                          <i class="ci-plus fs-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                  <div class="h6 mb-2">$3.12 <del class="fs-sm fw-normal text-body-tertiary ms-1">$4.05</del></div>
+                  
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="swiper-slide h-auto">
+              <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                <div class="position-relative z-2">
+                  <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                    <i class="ci-heart animate-target"></i>
+                  </button>
+                  <a class="d-block p-2 p-lg-3" href="home_page">
+                    <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                      <img src="https://i.pinimg.com/236x/26/8e/1b/268e1b398cd8c8a8084cc05b7853a249.jpg" alt="Image">
+                    </div>
+                  </a>
+                  <div class="position-absolute w-100 start-0 bottom-0">
+                    <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                      <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                        <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                          <i class="ci-minus fs-sm"></i>
+                        </button>
+                        <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        <button type="button" class="product-card-button btn btn-icon btn-sm btn-secondary ms-auto" data-increment="" aria-label="Increment quantity">
+                          <span data-count-input-value=""></span>
+                          <i class="ci-plus fs-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                  <div class="h6 mb-2">$0.80</div>
+                 
+                </div>
+               
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="swiper-slide h-auto">
+              <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                <div class="position-relative z-2">
+                  <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                    <i class="ci-heart animate-target"></i>
+                  </button>
+                  <a class="d-block p-2 p-lg-3" href="home_page">
+                    <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                      <img src="https://i.pinimg.com/236x/e7/67/34/e76734a3888392e8f05096d39754a975.jpg" alt="Image">
+                    </div>
+                  </a>
+                  <div class="position-absolute w-100 start-0 bottom-0">
+                    <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                      <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                        <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                          <i class="ci-minus fs-sm"></i>
+                        </button>
+                        <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        <button type="button" class="product-card-button btn btn-icon btn-sm btn-secondary ms-auto" data-increment="" aria-label="Increment quantity">
+                          <span data-count-input-value=""></span>
+                          <i class="ci-plus fs-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                  <div class="h6 mb-2">$2.99</div>
+                
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="swiper-slide h-auto">
+              <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                <div class="position-relative z-2">
+                  <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                    <i class="ci-heart animate-target"></i>
+                  </button>
+                  <a class="d-block p-2 p-lg-3" href="home_page">
+                    <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                      <img src="https://i.pinimg.com/236x/0e/8a/b7/0e8ab7d2727cdebe2dd5bd8e627be0c8.jpg" alt="Image">
+                    </div>
+                  </a>
+                  <div class="position-absolute w-100 start-0 bottom-0">
+                    <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                      <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                        <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                          <i class="ci-minus fs-sm"></i>
+                        </button>
+                        <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        <button type="button" class="product-card-button btn btn-icon btn-sm btn-secondary ms-auto" data-increment="" aria-label="Increment quantity">
+                          <span data-count-input-value=""></span>
+                          <i class="ci-plus fs-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                  <div class="h6 mb-2">$1.24</div>
+                 
+                </div>
+               
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="swiper-slide h-auto">
+              <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                <div class="position-relative z-2">
+                  <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                    <i class="ci-heart animate-target"></i>
+                  </button>
+                  <a class="d-block p-2 p-lg-3" href="home_page">
+                    <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                      <img src="https://i.pinimg.com/236x/58/86/67/588667982f62471d0fa1637e12ac4a04.jpg" alt="Image">
+                    </div>
+                  </a>
+                  <div class="position-absolute w-100 start-0 bottom-0">
+                    <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                      <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                        <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                          <i class="ci-minus fs-sm"></i>
+                        </button>
+                        <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        <button type="button" class="product-card-button btn btn-icon btn-sm btn-secondary ms-auto" data-increment="" aria-label="Increment quantity">
+                          <span data-count-input-value=""></span>
+                          <i class="ci-plus fs-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                  <div class="h6 mb-2">$3.95</div>
+               
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination (Bullets) -->
+          <div class="swiper-pagination position-static mt-3"></div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Page footer -->
+     <footer class="footer pt-5 pb-4">
+      <div class="container pt-sm-2 pt-md-3 pt-lg-4">
+        <div class="row pb-5 mb-lg-3">
+
+          <!-- Columns with links that are turned into accordion on screens < 500px wide (sm breakpoint) -->
+          <div class="col-md-8 col-xl-7 pb-2 pb-md-0 mb-4 mb-md-0 mt-n3 mt-sm-0">
+            <div class="accordion" id="footerLinks">
+              <div class="row row-cols-1 row-cols-sm-3">
+                <div class="accordion-item col border-0">
+                  <h6 class="accordion-header" id="categoriesHeading">
+                    <span class="text-dark-emphasis d-none d-sm-block">Categories</span>
+                    <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#categoriesLinks" aria-expanded="false" aria-controls="categoriesLinks">Categories</button>
+                  </h6>
+                  <div class="accordion-collapse collapse d-sm-block" id="categoriesLinks" aria-labelledby="categoriesHeading" data-bs-parent="#footerLinks">
+                    <ul class="nav flex-column gap-2 pt-sm-3 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">Makeup Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Jewllery Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Dress Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Shoes Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Sale</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="d-sm-none my-0">
+                </div>
+                <div class="accordion-item col border-0">
+                  <h6 class="accordion-header" id="accountHeading">
+                    <span class="text-dark-emphasis d-none d-sm-block">Account</span>
+                    <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#accountLinks" aria-expanded="false" aria-controls="accountLinks">Account</button>
+                  </h6>
+                  <div class="accordion-collapse collapse d-sm-block" id="accountLinks" aria-labelledby="accountHeading" data-bs-parent="#footerLinks">
+                    <ul class="nav flex-column gap-2 pt-sm-3 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Your account</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Shipping &amp; policies</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Refunds &amp; replacements</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Order tracking</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Delivery info</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Taxes &amp; fees</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="d-sm-none my-0">
+                </div>
+                <div class="accordion-item col border-0">
+                  <h6 class="accordion-header" id="customerHeading">
+                    <span class="text-dark-emphasis d-none d-sm-block">Customer service</span>
+                    <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#customerLinks" aria-expanded="false" aria-controls="customerLinks">Customer service</button>
+                  </h6>
+                  <div class="accordion-collapse collapse d-sm-block" id="customerLinks" aria-labelledby="customerHeading" data-bs-parent="#footerLinks">
+                    <ul class="nav flex-column gap-2 pt-sm-3 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Payment methods</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Money back guarantee</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Refunds &amp; replacements</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Product returns</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Support center</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Shipping</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="d-sm-none my-0">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subscription -->
+          <div class="col-md-4 offset-xl-1">
+            <h6 class="mb-4">Join us and stay up to date</h6>
+            <form class="needs-validation" novalidate="">
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="check-woman" checked="">
+                <label for="check-woman" class="form-check-label">Woman</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="check-man">
+                <label for="check-man" class="form-check-label">Man</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="check-sale">
+                <label for="check-sale" class="form-check-label">Sale</label>
+              </div>
+              <div class="position-relative mt-3">
+                <input type="email" class="form-control form-control-lg bg-image-none text-start" placeholder="Enter email" aria-label="Your email address" required="">
+                <div class="invalid-tooltip bg-transparent p-0">Please enter your email address!</div>
+                <button type="submit" class="btn btn-icon btn-ghost fs-xl btn-secondary border-0 position-absolute top-0 end-0 mt-1 me-1" aria-label="Submit your email address">
+                  <i class="ci-arrow-up-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Social account links -->
+      
+
+        <!-- Copyright + Payment methods -->
+        <div class="d-lg-flex align-items-center border-top pt-4 mt-3">
+          <div class="d-flex gap-2 gap-sm-3 justify-content-center ms-lg-auto mb-3 mb-md-4 mb-lg-0 order-lg-2">
+            <div>
+              <img src="./user/assets/img/payment-methods/visa-light-mode.svg" class="d-none-dark" alt="Visa">
+              <img src="./user/assets/img/payment-methods/visa-dark-mode.svg" class="d-none d-block-dark" alt="Visa">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/paypal-light-mode.svg" class="d-none-dark" alt="PayPal">
+              <img src="./user/assets/img/payment-methods/paypal-dark-mode.svg" class="d-none d-block-dark" alt="PayPal">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/mastercard.svg" alt="Mastercard">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/google-pay-light-mode.svg" class="d-none-dark" alt="Google Pay">
+              <img src="./user/assets/img/payment-methods/google-pay-dark-mode.svg" class="d-none d-block-dark" alt="Google Pay">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/apple-pay-light-mode.svg" class="d-none-dark" alt="Apple Pay">
+              <img src="./user/assets/img/payment-methods/apple-pay-dark-mode.svg" class="d-none d-block-dark" alt="Apple Pay">
+            </div>
+          </div>
+          <div class="d-md-flex justify-content-center order-lg-1">
+            <ul class="nav justify-content-center gap-4 order-md-3 mb-4 mb-md-0">
+              <li class="animate-underline">
+                <a class="nav-link fs-xs fw-normal p-0 animate-target" href="#!">Privacy</a>
+              </li>
+              <li class="animate-underline">
+                <a class="nav-link fs-xs fw-normal p-0 animate-target" href="#!">Affiliates</a>
+              </li>
+              <li class="animate-underline">
+                <a class="nav-link fs-xs fw-normal p-0 animate-target" href="#!">Terms of use</a>
+              </li>
+            </ul>
+            <div class="vr text-body-secondary opacity-25 mx-4 d-none d-md-inline-block order-md-2"></div>
+            <p class="fs-xs text-center text-lg-start mb-0 order-md-1">
+              © All rights reserved. Made by <span class="animate-underline"><a class="animate-target text-dark-emphasis text-decoration-none" href="https://createx.studio/" target="_blank" rel="noreferrer">Createx Studio</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <div class="floating-buttons position-fixed top-50 end-0 z-sticky me-3 me-xl-4 pb-4">
+      <a class="btn-scroll-top btn btn-sm bg-body border-0 rounded-pill shadow animate-slide-end" href="#top">
+        Top
+        <i class="ci-arrow-right fs-base ms-1 me-n1 animate-target"></i>
+        <span class="position-absolute top-0 start-0 w-100 h-100 border rounded-pill z-0"></span>
+        <svg class="position-absolute top-0 start-0 w-100 h-100 z-1" viewBox="0 0 62 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x=".75" y=".75" width="60.5" height="30.5" rx="15.25" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></rect>
+        </svg>
+      </a>
+      <a class="btn btn-sm btn-outline-secondary text-uppercase bg-body rounded-pill shadow animate-rotate ms-2 me-n5" href="#customizer" style="font-size: .625rem; letter-spacing: .05rem;" data-bs-toggle="offcanvas" role="button" aria-controls="customizer">
+        Customize<i class="ci-settings fs-base ms-1 me-n2 animate-target"></i>
+      </a>
+    </div>
+
+
+    <!-- Vendor scripts -->
+    <script src="./user/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./user/assets/vendor/choices.js/choices.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="./user/assets/js/theme.min.js"></script>
+  
+
+</body>
+<!-- Mirrored from cartzilla-html.createx.studio/checkout-v2-thankyou.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Apr 2025 06:02:58 GMT -->
+</html>

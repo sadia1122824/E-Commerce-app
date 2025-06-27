@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Add Events</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- <link href="../plugins/lightpick/lightpick.css" rel="stylesheet" /> -->
+
+        <!-- App css -->
+        <link href="../admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../admin/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../admin/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="../plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" /> -->
+        <link href="../admin/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+      <style>
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .custom-select,
+  .custom-input {
+    width: 60rem;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+
+  .custom-select:focus,
+  .custom-input:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.2);
+  }
+
+  .upload-btn-label {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #0d6efd;
+    border: 2px dashed #0d6efd;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f0f8ff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+     width: 60rem;
+  }
+
+  .upload-btn-label:hover {
+    background-color: #198754;
+    color: white;
+    border-style: solid;
+  }
+
+  #imageInput {
+    display: none;
+    width: 60rem;
+
+  }
+
+  .btn-upload {
+    background-color: #198754;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 60rem;
+  }
+
+  .btn-upload:hover {
+    background-color: #157347;
+  }
+
+  #previewContainer {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  #previewContainer img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+</style>
+
+    </head>
+
+    <body>
+        <!-- Left Sidenav -->
+        <div id="side-navbar">
+
+        </div>
+        <!-- end left-sidenav-->
+        
+
+        <div class="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar">            
+                <!-- Navbar -->
+                <nav class="navbar-custom">    
+                  
+        
+                   
+                </nav>
+                <!-- end navbar-->
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Page Content-->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                   
+                    <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                              
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+  
+  
+
+      <div class="form-group">
+  <label for="imageInput" class="upload-btn-label">📁 Choose Image</label>
+  <input type="file" id="imageInput" accept="image/*">
+</div>
+
+<div class="form-group">
+  <label for="categorySelect">🗂️ Select Category</label>
+  <select id="categorySelect" class="custom-select" required>
+    <option value="">-- Select --</option>
+    <option value="men">👔 Men</option>
+    <option value="women">👗 Women</option>
+    <option value="accessories">👜 Accessories</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <button class="btn-upload" onclick="handleUpload()">🚀 Upload</button>
+</div>
+
+<!-- 🔍 Preview -->
+<div id="previewContainer"></div>
+
+
+
+
+
+
+
+                                        </div><!--end col-->
+                                        <div class="col-lg-5 ml-auto align-self-center">
+                                           
+                                            
+                                        </div><!--end col-->
+                                    </div><!--end row-->                                                                              
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+
+                </div><!-- container -->
+
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        
+
+
+        <!-- jQuery  -->
+        <!-- <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metismenu.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/feather.min.js"></script>
+        <script src="assets/js/simplebar.min.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+
+        <script src="../plugins/lightpick/lightpick.js"></script>
+        <script src="assets/pages/jquery.projects_new.init.js"></script> -->
+
+        <!-- App js -->
+        <!-- <script src="assets/js/app.js"></script>
+        <script src="./side_navbar.js"></script>
+        <script>
+            $('.change-avatar').on('click', function() { $('#fileupload').click();return false;});
+            $('.add-member').on('click', function() { $('#add-member').click();return false;});
+
+           
+        </script> -->
+
+        
+              
+         
+        <script src="./admin/side_navbar.js"></script>            
+<script>
+  const imageInput = document.getElementById('imageInput');
+  const previewContainer = document.getElementById('previewContainer');
+  const categorySelect = document.getElementById('categorySelect');
+
+  imageInput.addEventListener('change', () => {
+    const files = Array.from(imageInput.files);
+    previewContainer.innerHTML = '';
+    files.forEach(file => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        previewContainer.appendChild(img);
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+
+  async function handleUpload() {
+    const files = Array.from(imageInput.files);
+    const category = categorySelect.value;
+
+    if (!files.length) return alert("❌ Please select an image.");
+    if (!category) return alert("❌ Please select a category.");
+
+    const formData = new FormData();
+    formData.append('image', files[0]);
+    formData.append('category', category);
+
+    try {
+      const res = await fetch('/adminshopimage', { 
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await res.json();
+      alert(data.message || '✅ Upload successful!');
+    } catch (err) {
+      console.error("❌ Upload error:", err);
+      alert("Upload failed!");
+    }
+  }
+</script>
+
+
+
+
+
+        
+    </body>
+
+</html>

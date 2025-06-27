@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>mosque</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+  <meta content="" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <!-- App css -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="/admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/admin/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="/admin/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="admin/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" /> -->
+  <link href="/admin/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    .page-wrapper {
+      /* flex: 1; */
+      padding: 0;
+      /* display: block; */
+      margin-left: 20px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      top: 70%;
+      right: 25px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #888;
+      font-size: 18px;
+    }
+
+    .toggle-password:hover {
+      color: hsl(64, 64%, 45%);
+    }
+  </style>
+</head>
+
+<body style="background-color: #000; color: #fff;">
+
+  <div class="page-wrapper">
+
+    <!-- Page Content-->
+    <div class="page-content"
+      style="min-height: 100vh; display: flex; align-items: flex-start; justify-content: center; padding-top: 50px;">
+      <div class="container-fluid" style="max-width: 600px; width: 100%;">
+
+        <div class="card" style="background-color: #111; border: 1px solid #FFD700;">
+          <div class="card-header" style="background-color: #000; border-bottom: 1px solid #FFD700;">
+            <h4 class="card-title" style="color: #FFD700;">Sign In</h4>
+            <p class="text-muted mb-0" style="color: #ccc;"></p>
+          </div><!--end card-header-->
+
+          <div class="card-body">
+            <div class="form-group">
+              <label for="email" style="color: #FFD700;">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email"
+                style="background-color: #000; color: #FFD700; border: 1px solid #FFD700;">
+              <small id="emailHelp" class="form-text" style="color: #aaa;">We'll never share your email with anyone
+                else.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="password" style="color: #FFD700;">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password"
+                style="background-color: #000; color: #FFD700; border: 1px solid #FFD700;">
+              <i class="fas fa-eye-slash toggle-password" id="toggleIcon" onclick="toggleUser()"></i>
+            </div>
+
+            <button id="submitBtn" type="button" class="btn"
+              style="background-color: #FFD700; color: #000;">Submit</button>
+            <button id="cancelBtn" type="button" class="btn"
+              style="background-color: #444; color: #FFD700; border: 1px solid #FFD700;">Cancel</button>
+
+          </div><!--end card-body-->
+        </div><!--end card-->
+
+        <div id="sweet_alert">
+
+        </div>
+
+      </div><!--end container-->
+    </div>
+
+
+  </div>
+
+ <script>
+  // 🔁 Toggle show/hide password
+  const toggleUser = () => {
+    const passwordInput = document.getElementById('password');
+    const toggleIcon = document.getElementById('toggleIcon');
+
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      toggleIcon.classList.remove('fa-eye-slash');
+      toggleIcon.classList.add('fa-eye');
+    } else {
+      passwordInput.type = 'password';
+      toggleIcon.classList.remove('fa-eye');
+      toggleIcon.classList.add('fa-eye-slash');
+    }
+  };
+
+  // 🎉 Sweet Alert toast style
+  function sweet_alert(icon, title) {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 6000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      }
+    });
+    Toast.fire({
+      icon: icon,
+      title: title
+    });
+  }
+
+  // 🔘 Submit Button Listener
+  document.getElementById('submitBtn').addEventListener('click', function () {
+    const data = {
+      email: document.getElementById('email').value.trim(),
+      password: document.getElementById('password').value.trim(),
+    };
+
+    if (!data.email || !data.password) {
+      alert('Please fill all fields');
+      return;
+    }
+
+    fetch('login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json();
+      })
+      .then(response => {
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+
+        if (response.success) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Logged in successfully',
+            showConfirmButton: false,
+            timer: 2000
+          }).then(() => {
+            window.location.href = './admin/index.html';
+          });
+
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Wrong credentials',
+            showConfirmButton: false,
+            timer: 3000
+          });
+        }
+      })
+      .catch(err => {
+        console.error('Fetch error:', err);
+        Swal.fire({
+          icon: 'info',
+          title: 'Something went wrong',
+          showConfirmButton: false,
+          timer: 3000
+        });
+      });
+  });
+</script>
+
+</body>
+
+</html>

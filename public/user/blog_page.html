@@ -1,0 +1,1301 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="light" data-pwa="true">
+<!-- Mirrored from cartzilla-html.createx.studio/blog-grid-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Apr 2025 06:02:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <!-- SEO Meta Tags -->
+    <title>Cartzilla | Blog Grid View v.1</title>
+    <meta name="description" content="Cartzilla - Multipurpose E-Commerce Bootstrap HTML Template">
+    <meta name="keywords" content="online shop, e-commerce, online store, market, multipurpose, product landing, cart, checkout, ui kit, light and dark mode, bootstrap, html5, css3, javascript, gallery, slider, mobile, pwa">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <link rel="icon" type="image/png" href="./user/assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./user/assets/app-icons/icon-180x180.png">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="./user/assets/js/theme-switcher.js"></script>
+
+    <!-- Preloaded local web font (Inter) -->
+    <link rel="preload" href="./user/assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <!-- Font icons -->
+    <link rel="preload" href="./user/assets/icons/cartzilla-icons.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="./user/assets/icons/cartzilla-icons.min.css">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="./user/assets/vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Bootstrap + Theme styles -->
+    <link rel="preload" href="./user/assets/css/theme.min.css" as="style">
+    <link rel="preload" href="./user/assets/css/theme.rtl.min.css" as="style">
+    <link rel="stylesheet" href="./user/assets/css/theme.min.css" id="theme-styles">
+
+    <!-- Customizer -->
+    <script src="./user/assets/js/customizer.min.js"></script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Customizer offcanvas -->
+    <div class="offcanvas offcanvas-end" id="customizer" tabindex="-1">
+      <div class="offcanvas-header border-bottom">
+        <h4 class="h5 offcanvas-title">Customize theme</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <!-- Customizer settings -->
+        <div class="customizer-collapse collapse show" id="customizerSettings">
+
+          <!-- Colors -->
+          <div class="pb-4 mb-2">
+            <div class="d-flex align-items-center mb-3">
+              <i class="ci-paint text-body-tertiary fs-5 me-2"></i>
+              <h5 class="fs-lg mb-0">Colors</h5>
+            </div>
+            <div class="row row-cols-2 g-3" id="theme-colors">
+              <div class="col">
+                <h6 class="fs-sm mb-2">Primary</h6>
+                <div class="color-swatch d-flex border rounded gap-3 p-2" id="theme-primary" data-color-labels="[&quot;theme-primary&quot;, &quot;primary&quot;, &quot;primary-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#f55266">
+                  <label for="primary" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #f55266"></label>
+                  <input type="color" class="visually-hidden" id="primary" value="#f55266">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Success</h6>
+                <div class="color-swatch d-flex border rounded gap-3 p-2" id="theme-success" data-color-labels="[&quot;theme-success&quot;, &quot;success&quot;, &quot;success-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#33b36b">
+                  <label for="success" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #33b36b"></label>
+                  <input type="color" class="visually-hidden" id="success" value="#33b36b">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Warning</h6>
+                <div class="color-swatch d-flex border rounded gap-3 p-2" id="theme-warning" data-color-labels="[&quot;theme-warning&quot;, &quot;warning&quot;, &quot;warning-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#fc9231">
+                  <label for="warning" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #fc9231"></label>
+                  <input type="color" class="visually-hidden" id="warning" value="#fc9231">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Danger</h6>
+                <div class="color-swatch d-flex border rounded gap-2 p-2" id="theme-danger" data-color-labels="[&quot;theme-danger&quot;, &quot;danger&quot;, &quot;danger-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#f03d3d">
+                  <label for="danger" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #f03d3d"></label>
+                  <input type="color" class="visually-hidden" id="danger" value="#f03d3d">
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="fs-sm mb-2">Info</h6>
+                <div class="color-swatch d-flex border rounded gap-2 p-2" id="theme-info" data-color-labels="[&quot;theme-info&quot;, &quot;info&quot;, &quot;info-rgb&quot;]">
+                  <input type="text" class="form-control bg-transparent border-0 rounded-0 p-1" value="#2f6ed5">
+                  <label for="info" class="ratio ratio-1x1 flex-shrink-0 w-100 cursor-pointer rounded-circle" style="max-width: 38px; background-color: #2f6ed5"></label>
+                  <input type="color" class="visually-hidden" id="info" value="#2f6ed5">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direction -->
+          <div class="pb-4 mb-2">
+            <div class="d-flex align-items-center pb-1 mb-2">
+              <i class="ci-sort text-body-tertiary fs-lg me-2" style="transform: rotate(90deg)"></i>
+              <h5 class="fs-lg mb-0">Direction</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between border rounded p-3">
+              <div class="me-3">
+                <h6 class="mb-1">RTL</h6>
+                <p class="fs-sm mb-0">Change text direction</p>
+              </div>
+              <div class="form-check form-switch m-0">
+                <input type="checkbox" class="form-check-input" role="switch" id="rtl-switch">
+              </div>
+            </div>
+            <div class="alert alert-info p-2 mt-2 mb-0">
+              <div class="d-flex text-body-emphasis fs-xs py-1 pe-1">
+                <i class="ci-info text-info fs-lg mb-2 mb-sm-0" style="margin-top: .125rem"></i>
+                <div class="ps-2">To switch the text direction of your webpage from LTR to RTL, please consult the detailed instructions provided in the relevant section of our documentation.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Border width -->
+          <div class="pb-4 mb-2">
+            <div class="d-flex align-items-center pb-1 mb-2">
+              <i class="ci-menu text-body-tertiary fs-lg me-2"></i>
+              <h5 class="fs-lg mb-0">Border width, px</h5>
+            </div>
+            <div class="slider-input d-flex align-items-center gap-3 border rounded p-3" id="border-input">
+              <input type="range" class="form-range" min="0" max="10" step="1" value="1">
+              <input type="number" class="form-control" id="border-width" min="0" max="10" value="1" style="max-width: 5.5rem">
+            </div>
+          </div>
+
+          <!-- Rounding -->
+          <div class="d-flex align-items-center pb-1 mb-2">
+            <i class="ci-maximize text-body-tertiary fs-lg me-2"></i>
+            <h5 class="fs-lg mb-0">Rounding, rem</h5>
+          </div>
+          <div class="slider-input d-flex align-items-center gap-3 border rounded p-3">
+            <input type="range" class="form-range" min="0" max="5" step=".05" value="0.5">
+            <input type="number" class="form-control" id="border-radius" min="0" max="5" step=".05" value="0.5" style="max-width: 5.5rem">
+          </div>
+        </div>
+
+        <!-- Customizer code -->
+        <div class="customizer-collapse collapse" id="customizerCode">
+          <div class="nav mb-3">
+            <a class="nav-link animate-underline fs-base p-0" href=".html" data-bs-toggle="collapse" aria-expanded="true" aria-controls="customizerSettings customizerCode">
+              <i class="ci-chevron-left fs-lg ms-n1 me-1"></i>
+              <span class="animate-target">Back to settings</span>
+            </a>
+          </div>
+          <p class="fs-sm pb-1">To apply the provided styles to your webpage, enclose them within a <code>&lt;style&gt;</code> tag and insert this tag into the <code>&lt;head&gt;</code> section of your HTML document after the following link to the main stylesheet:<br><code>&lt;link href="assets/css/theme.min.css"&gt;</code></p>
+          <div class="position-relative bg-body-tertiary rounded overflow-hidden pt-3">
+            <div class="position-absolute top-0 start-0 w-100 p-3">
+              <button type="button" class="btn btn-sm btn-outline-dark w-100" data-copy-text-from="#generated-styles" data-done-label="Code copied">
+                <i class="ci-copy fs-sm me-1"></i>
+                Copy code
+              </button>
+            </div>
+            <pre class="text-wrap bg-transparent border-0 fs-xs text-body-emphasis p-4 pt-5" id="generated-styles"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offcanvas footer (Action buttons) -->
+      <div class="offcanvas-header border-top gap-3 d-none" id="customizer-btns">
+        <button type="button" class="btn btn-lg btn-secondary w-100 fs-sm" id="customizer-reset">
+          <i class="ci-trash fs-lg me-2 ms-n1"></i>
+          Reset
+        </button>
+        <button class="btn btn-lg btn-primary hiding-collapse-toggle w-100 fs-sm collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".customizer-collapse" aria-expanded="false" aria-controls="customizerSettings customizerCode">
+          <i class="ci-code fs-lg me-2 ms-n1"></i>
+          Show code
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Shopping cart offcanvas -->
+    <div class="offcanvas offcanvas-end pb-sm-2 px-sm-2" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel" style="width: 500px">
+
+      <!-- Header -->
+      <div class="offcanvas-header flex-column align-items-start py-3 pt-lg-4">
+        <div class="d-flex align-items-center justify-content-between w-100 mb-3 mb-lg-4">
+          <h4 class="offcanvas-title" id="shoppingCartLabel">Shopping cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <p class="fs-sm">Buy <span class="text-dark-emphasis fw-semibold">$183</span> more to get <span class="text-dark-emphasis fw-semibold">Free Shipping</span></p>
+        <div class="progress w-100" role="progressbar" aria-label="Free shipping progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 4px">
+          <div class="progress-bar bg-warning rounded-pill" style="width: 75%"></div>
+        </div>
+      </div>
+
+      <!-- Items -->
+      <div class="offcanvas-body d-flex flex-column gap-4 pt-2">
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+            <img src="./user/assets/img/shop/electronics/thumbs/08.png" width="110" alt="iPhone 14">
+          </a>
+          <div class="w-100 min-w-0 ps-2 ps-sm-3">
+            <h5 class="d-flex animate-underline mb-2">
+              <a class="d-block fs-sm fw-medium text-truncate animate-target" href="shop-product-general-electronics.html">Apple iPhone 14 128GB White</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$899.00</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-2">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="1" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="position-relative flex-shrink-0" href="shop-product-general-electronics.html">
+            <span class="badge text-bg-danger position-absolute top-0 start-0">-10%</span>
+            <img src="./user/assets/img/shop/electronics/thumbs/09.png" width="110" alt="iPad Pro">
+          </a>
+          <div class="w-100 min-w-0 ps-2 ps-sm-3">
+            <h5 class="d-flex animate-underline mb-2">
+              <a class="d-block fs-sm fw-medium text-truncate animate-target" href="shop-product-general-electronics.html">Tablet Apple iPad Pro M2</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$989.00 <del class="text-body-tertiary fs-xs fw-normal">$1,099.00</del></div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-2">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="1" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+            <img src="./user/assets/img/shop/electronics/thumbs/01.png" width="110" alt="Smart Watch">
+          </a>
+          <div class="w-100 min-w-0 ps-2 ps-sm-3">
+            <h5 class="d-flex animate-underline mb-2">
+              <a class="d-block fs-sm fw-medium text-truncate animate-target" href="shop-product-general-electronics.html">Smart Watch Series 7, White</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$429.00</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-2">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="1" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="offcanvas-header flex-column align-items-start">
+        <div class="d-flex align-items-center justify-content-between w-100 mb-3 mb-md-4">
+          <span class="text-light-emphasis">Subtotal:</span>
+          <span class="h6 mb-0">$2,317.00</span>
+        </div>
+        <div class="d-flex w-100 gap-3">
+          <a class="btn btn-lg btn-secondary w-100" href="checkout-v1-cart.html">View cart</a>
+          <a class="btn btn-lg btn-primary w-100" href="checkout-v1-delivery-1.html">Checkout</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Navigation bar (Page header) -->
+      <header class="navbar navbar-expand-lg navbar-sticky bg-body d-block z-fixed p-0" data-sticky-navbar="{&quot;offset&quot;: 500}">
+      <div class="container py-2 py-lg-3">
+        <div class="d-flex align-items-center gap-3">
+
+          <!-- Mobile offcanvas menu toggler (Hamburger) -->
+          <button type="button" class="navbar-toggler me-4 me-md-2" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Country slect visible on screens > 768px wide (md breakpoint) -->
+          <div class="dropdown d-none d-md-block nav">
+          
+         
+          </div>
+
+          <!-- City slect visible on screens > 768px wide (md breakpoint) -->
+        
+        </div>
+
+        <!-- Navbar brand (Logo) -->
+        <a class="navbar-brand fs-2 py-0 m-0 me-auto me-sm-n5" href="index-2.html">GlamVibe Store</a>
+
+        <!-- Button group -->
+        <div class="d-flex align-items-center">
+
+          <!-- Navbar stuck nav toggler -->
+          <button type="button" class="navbar-toggler d-none navbar-stuck-show me-3" data-bs-toggle="collapse" data-bs-target="#stuckNav" aria-controls="stuckNav" aria-expanded="false" aria-label="Toggle navigation in navbar stuck state">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Theme switcher (light/dark/auto) -->
+          <div class="dropdown">
+            <button type="button" class="theme-switcher btn btn-icon btn-lg btn-outline-secondary fs-lg border-0 rounded-circle animate-scale" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (light)">
+              <span class="theme-icon-active d-flex animate-target">
+                <i class="ci-sun"></i>
+              </span>
+            </button>
+            <ul class="dropdown-menu" style="--cz-dropdown-min-width: 9rem">
+              <li>
+                <button type="button" class="dropdown-item active" data-bs-theme-value="light" aria-pressed="true">
+                  <span class="theme-icon d-flex fs-base me-2">
+                    <i class="ci-sun"></i>
+                  </span>
+                  <span class="theme-label">Light</span>
+                  <i class="item-active-indicator ci-check ms-auto"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                  <span class="theme-icon d-flex fs-base me-2">
+                    <i class="ci-moon"></i>
+                  </span>
+                  <span class="theme-label">Dark</span>
+                  <i class="item-active-indicator ci-check ms-auto"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false">
+                  <span class="theme-icon d-flex fs-base me-2">
+                    <i class="ci-auto"></i>
+                  </span>
+                  <span class="theme-label">Auto</span>
+                  <i class="item-active-indicator ci-check ms-auto"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Search toggle button visible on screens < 992px wide (lg breakpoint) -->
+          <button type="button" class="btn btn-icon btn-lg fs-xl btn-outline-secondary border-0 rounded-circle animate-shake d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#searchBox" aria-controls="searchBox" aria-label="Toggle search bar">
+            <i class="ci-search animate-target"></i>
+          </button>
+
+          <!-- Account button visible on screens > 768px wide (md breakpoint) -->
+          <a class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-shake d-none d-md-inline-flex" href="account-signin.html">
+            <i class="ci-user animate-target"></i>
+            <span class="visually-hidden">Account</span>
+          </a>
+
+          <!-- Wishlist button visible on screens > 768px wide (md breakpoint) -->
+          <a class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-pulse d-none d-md-inline-flex" href="#!">
+            <i class="ci-heart animate-target"></i>
+            <span class="visually-hidden">Wishlist</span>
+          </a>
+
+          <!-- Cart button -->
+          <button type="button" class="btn btn-icon btn-lg fs-xl btn-outline-secondary position-relative border-0 rounded-circle animate-scale" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart" aria-label="Shopping cart">
+            <span class="position-absolute top-0 start-100 badge fs-xs text-bg-primary rounded-pill mt-1 ms-n4 z-2" style="--cz-badge-padding-y: .25em; --cz-badge-padding-x: .42em">3</span>
+            <i class="ci-shopping-bag animate-target me-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+      <div class="collapse navbar-stuck-hide" id="stuckNav">
+        <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header py-3">
+            <h5 class="offcanvas-title" id="navbarNavLabel">Browse Cartzilla</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <!-- Country and City slects visible on screens < 768px wide (md breakpoint) -->
+          <div class="offcanvas-header gap-3 d-md-none pt-0 pb-3">
+            <div class="dropdown nav">
+              <a class="nav-link dropdown-toggle py-1 px-0" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Country select: USA">
+                <div class="ratio ratio-1x1" style="width: 20px">
+                  <img src="./user/assets/img/flags/en-us.png" alt="USA">
+                </div>
+              </a>
+              <ul class="dropdown-menu fs-sm" style="--cz-dropdown-spacer: .5rem">
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/en-uk.png" class="flex-shrink-0 me-2" width="20" alt="United Kingdom">
+                    United Kingdom
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/fr.png" class="flex-shrink-0 me-2" width="20" alt="France">
+                    France
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/de.png" class="flex-shrink-0 me-2" width="20" alt="Deutschland">
+                    Deutschland
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#!">
+                    <img src="./user/assets/img/flags/it.png" class="flex-shrink-0 me-2" width="20" alt="Italia">
+                    Italia
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown nav">
+              <a class="nav-link animate-underline dropdown-toggle fw-normal py-1 px-0" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="animate-target">Washington</span>
+              </a>
+              <ul class="dropdown-menu fs-sm" style="--cz-dropdown-spacer: .5rem">
+                <li><a class="dropdown-item" href="#!">Chicago</a></li>
+                <li><a class="dropdown-item" href="#!">Los Angeles</a></li>
+                <li><a class="dropdown-item" href="#!">New York</a></li>
+                <li><a class="dropdown-item" href="#!">Philadelphia</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offcanvas-body pt-1 pb-3 py-lg-0">
+            <div class="container pb-lg-2 px-0 px-lg-3">
+
+              <div class="position-relative d-lg-flex align-items-center justify-content-between">
+
+                <!-- Categories mega menu -->
+                <div class="navbar-nav">
+                  <div class="dropdown position-static pb-lg-2">
+                    <button type="button" class="nav-link animate-underline fw-semibold text-uppercase ps-0" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">
+                      <i class="ci-menu fs-lg me-2"></i>
+                      <span class="animate-target">Categories</span>
+                    </button>
+                    <div class="dropdown-menu w-100 p-4 px-xl-5" style="--cz-dropdown-spacer: .75rem">
+
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-underline justify-content-lg-center mt-n2 mt-lg-0 mb-4" role="tablist">
+                      
+                      
+                       
+                          <li class="nav-item" role="presentation">
+                          <button type="button" class="nav-link text-uppercase" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids-tab-pane" role="tab" aria-controls="kids-tab-pane" aria-selected="false">
+                            Woman related Products
+                          </button>
+                        </li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content pb-xl-4">
+
+                        <!-- dress's tab -->
+                        <div class="tab-pane fade show active" id="womens-tab-pane" role="tabpanel" aria-labelledby="womens-tab">
+                          <div class="row g-4">
+                            <div class="col-lg-2">
+                              <a class="d-inline-flex animate-underline h6 text-dark-emphasis text-decoration-none mb-2" href="/shopnow_dress">
+                                <span class="animate-target">Clothing</span>
+                              </a>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Shirts &amp; Tops</a>
+                                </li>
+                               
+                           
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Sweatshirts</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Dresses</a>
+                                </li>
+                              
+                               
+                              </ul>
+                            </div>
+                            <div class="col-lg-2">
+                              <a class="d-inline-flex animate-underline h6 text-dark-emphasis text-decoration-none mb-2" href="/shopnow_Shows">
+                                <span class="animate-target">Shoes</span>
+                              </a>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Boots</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Sandals</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Heels</a>
+                                </li>
+                              
+                               
+                               
+                            
+                              </ul>
+                            </div>
+                            <div class="col-lg-2">
+                              <a class="d-inline-flex animate-underline h6 text-dark-emphasis text-decoration-none mb-2" href="/shopnow_MakeUp">
+                                <span class="animate-target">Makeup</span>
+                              </a>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">Lipstics</a>
+                                </li>
+                               
+                              
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">eyes Makeup</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">Blusher</a>
+                                </li>
+                              
+                              
+                              </ul>
+                            </div>
+                            <div class="col-lg-2">
+                              <div class="h6 mb-2">Jewllery</div>
+                              <ul class="nav flex-column gap-2 mt-0">
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">earings</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Rings</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Lockets</a>
+                                </li>
+                                <li class="d-flex w-100 pt-1">
+                                  <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Bangles</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block" data-bs-theme="light">
+                              <div class="position-relative d-flex flex-column h-100 rounded-4 overflow-hidden p-4">
+                                <div class="position-relative d-flex flex-column justify-content-between h-100 z-2 pt-xl-2 ps-xl-2">
+                                  <div class="h4 lh-base">Women's<br>Heels<br>Collection</div>
+                                  <div>
+                                    <a class="btn btn-sm btn-dark stretched-link" href="/shopnow_Shows" data-bs-theme="light">Shop now</a>
+                                  </div>
+                                </div>
+                                <img src="./user/assets/img/mega-menu/fashion/01.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rtl-flip" alt="Image">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Men's tab -->
+                     
+
+                        <!-- Kids' tab -->
+                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navbar nav -->
+                <ul class="navbar-nav position-relative me-xl-n5">
+                  <li >
+                    <a  class="nav-link dropdown-toggle " aria-current="page" href="/home_page" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Home</a>
+                    
+                  </li>
+                 
+                  <li class="nav-item dropdown pb-lg-2 me-lg-n1 me-xl-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">Account</a>
+                    <ul class="dropdown-menu" style="--cz-dropdown-spacer: .75rem">
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Auth Pages</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="account-signin.html">Sign In</a></li>
+                          <li><a class="dropdown-item" href="account-signup.html">Sign Up</a></li>
+                         
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                       
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                          <li><a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+                          <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                          <li><a class="dropdown-item" href="account-reviews.html">My Reviews</a></li>
+                          <li><a class="dropdown-item" href="account-info.html">Personal Info</a></li>
+                          <li><a class="dropdown-item" href="account-addresses.html">Addresses</a></li>
+                          <li><a class="dropdown-item" href="account-notifications.html">Notifications</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                       
+                    
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown pb-lg-2 me-lg-n1 me-xl-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" style="--cz-dropdown-spacer: .75rem">
+                      <li class="dropend">
+                        <a  href="#!" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">About</a>
+                        
+                      </li>
+                      <li class="dropend">
+                        <a  href="/blog_page" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Blog</a>
+                     
+                      </li>
+                      <li class="dropend">
+                        <a  href="/contact_page" role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Contact</a>
+                       
+                      </li>
+                     
+                      
+                     
+                    </ul>
+                  </li>
+                 
+                  
+                </ul>
+
+                <!-- Search toggle visible on screens > 991px wide (lg breakpoint) -->
+                <button type="button" class="btn btn-outline-secondary justify-content-start w-100 px-3 mb-lg-2 ms-3 d-none d-lg-inline-flex" style="max-width: 240px" data-bs-toggle="offcanvas" data-bs-target="#searchBox" aria-controls="searchBox">
+                  <i class="ci-search fs-base ms-n1 me-2"></i>
+                  <span class="text-body-tertiary fw-normal">Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Account and Wishlist buttons visible on screens < 768px wide (md breakpoint) -->
+          <div class="offcanvas-header border-top px-0 py-3 mt-3 d-md-none">
+            <div class="nav nav-justified w-100">
+              <a class="nav-link border-end" href="account-signin.html">
+                <i class="ci-user fs-lg opacity-60 me-2"></i>
+                Account
+              </a>
+              <a class="nav-link" href="#!">
+                <i class="ci-heart fs-lg opacity-60 me-2"></i>
+                Wishlist
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <main class="content-wrapper">
+
+      <!-- Breadcrumb -->
+      <nav class="container pt-3 my-3 my-md-4" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/home_page">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+
+
+      <!-- Page title -->
+      <h1 class="h3 container mb-4">Our blog</h1>
+
+
+      <!-- Featured posts -->
+      <section class="container pb-5">
+        <div class="row gy-5 pb-5">
+
+          <!-- Article -->
+          <article class="col-md-6 col-lg-7">
+            <a class="ratio d-flex hover-effect-scale rounded-4 overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(484 / 746 * 100%)">
+              <img src="https://img.freepik.com/free-photo/front-view-woman-ordering-items-sale-using-tablet_23-2148695601.jpg?ga=GA1.1.134945083.1747019895&amp;semt=ais_hybrid&amp;w=740" style="color: transparent;" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="pt-4">
+              <div class="nav align-items-center gap-2 pb-2 mt-n1 mb-1">
+               
+                <hr class="vr my-1 mx-1">
+                
+              </div>
+              <h3 class="h5 mb-0">
+                <a class="hover-effect-underline" href="/home_page">💫 Welcome to my store – Fashion Meets Elegance
+                     Step into the world of style with my store, your ultimate destination for premium jewellery, elegant dresses, quality makeup, and stylish shoes – all in one place.
+
+                    We bring you carefully selected pieces that match your taste, enhance your beauty, and add charm to every occasion. Whether you're dressing up for a party, wedding, or daily wear – we have something special for everyone.</a>
+              </h3>
+            </div>
+          </article>
+
+          <!-- Side list -->
+      <div class="col-md-6 col-lg-5 d-flex flex-column align-content-between gap-4">
+
+  <!-- Article 1 -->
+  <article id="mainBlog1" class="hover-effect-scale position-relative d-flex align-items-center ps-xl-4 mb-xl-1">
+    <div class="w-100 pe-3 pe-sm-4 pe-lg-3 pe-xl-4">
+      <div class="text-body-tertiary fs-xs pb-2 mb-1 blog-date">October 10, 2024</div>
+      <h3 class="h6 mb-2">
+        <a class="hover-effect-underline stretched-link blog-desc" href="/home_page">
+          Digital digest: News and views on the latest electronic products
+        </a>
+      </h3>
+    </div>
+    <div class="ratio w-100 rounded overflow-hidden" style="max-width: 196px; --cz-aspect-ratio: calc(140 / 196 * 100%)">
+      <img src="./user/assets/img/blog/grid/v1/02.jpg" class="hover-effect-target blog-img" alt="Image">
+    </div>
+  </article>
+
+  <!-- Article 2 -->
+  <article id="mainBlog2" class="hover-effect-scale position-relative d-flex align-items-center ps-xl-4 mb-xl-1">
+    <div class="w-100 pe-3 pe-sm-4 pe-lg-3 pe-xl-4">
+      <div class="text-body-tertiary fs-xs pb-2 mb-1 blog-date">September 29, 2024</div>
+      <h3 class="h6 mb-2">
+        <a class="hover-effect-underline stretched-link blog-desc" href="/home_page">
+          Embracing connections: How modern technology bridges gaps and builds communities
+        </a>
+      </h3>
+    </div>
+    <div class="ratio w-100 rounded overflow-hidden" style="max-width: 196px; --cz-aspect-ratio: calc(140 / 196 * 100%)">
+      <img src="./user/assets/img/blog/grid/v1/03.jpg" class="hover-effect-target blog-img" alt="Image">
+    </div>
+  </article>
+
+  <!-- Article 3 -->
+  <article id="mainBlog3" class="hover-effect-scale position-relative d-flex align-items-center ps-xl-4 mb-xl-1">
+    <div class="w-100 pe-3 pe-sm-4 pe-lg-3 pe-xl-4">
+      <div class="text-body-tertiary fs-xs pb-2 mb-1 blog-date">September 17, 2024</div>
+      <h3 class="h6 mb-2">
+        <a class="hover-effect-underline stretched-link blog-desc" href="/home_page">
+          Transform your home into a smart hub with the latest IoT
+        </a>
+      </h3>
+    </div>
+    <div class="ratio w-100 rounded overflow-hidden" style="max-width: 196px; --cz-aspect-ratio: calc(140 / 196 * 100%)">
+      <img src="./user/assets/img/blog/grid/v1/04.jpg" class="hover-effect-target blog-img" alt="Image">
+    </div>
+  </article>
+
+</div>
+
+        </div>
+        <hr class="my-0 my-md-2 my-lg-4">
+      </section>
+
+
+      <!-- Posts grid + Sidebar -->
+      <section class="container pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+        <div class="row">
+
+          <!-- Posts grid -->
+          <div class="col-lg-8">
+            <div class="row row-cols-1 row-cols-sm-2 gy-5">
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://img.freepik.com/free-photo/front-view-woman-ordering-items-sale-using-tablet_23-2148695601.jpg?ga=GA1.1.134945083.1747019895&amp;semt=ais_hybrid&amp;w=740" style="color: transparent;" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+                  <div class="nav align-items-center gap-2 pb-2 mt-n1 mb-1">
+                   
+                    <hr class="vr my-1 mx-1">
+                    
+                  </div>
+                 
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://img.freepik.com/free-photo/smiling-fashionable-woman-sitting-home-with-shopping-bags-laptop-smartphone_23-2148101652.jpg?ga=GA1.1.134945083.1747019895&amp;semt=ais_hybrid&amp;w=740" style="color: transparent;" class="hover-effect-target" alt="Image">
+                </a>
+               
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://img.freepik.com/free-photo/long-shot-woman-sitting-shopping-bags_23-2148674990.jpg?ga=GA1.1.134945083.1747019895&amp;semt=ais_hybrid&amp;w=740" style="color: transparent;" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+               
+                
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://media.istockphoto.com/id/694044976/photo/i-know-ill-find-something-i-like-here.jpg?b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=psSKIAtSiOIPW3oMTrrAE26BMcy0U2tpggfBOS9ifAQ=" style="color: transparent;" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+                 
+                
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+               
+                
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNob3BwaW5nfGVufDB8fDB8fHww" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+                
+                 
+                </div>
+              </article>
+            </div>
+
+
+            <!-- Contributors' posts slider -->
+            <div class="py-5 my-1 my-sm-2 my-md-3 my-lg-4 my-xl-5">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2 class="h3 mb-0">Charitable contributions</h2>
+                <div class="d-flex gap-2">
+                  <button type="button" id="prev-post" class="btn btn-prev btn-icon btn-outline-secondary rounded-circle animate-slide-start me-1" aria-label="Prev">
+                    <i class="ci-chevron-left fs-lg animate-target"></i>
+                  </button>
+                  <button type="button" id="next-post" class="btn btn-next btn-icon btn-outline-secondary rounded-circle animate-slide-end" aria-label="Next">
+                    <i class="ci-chevron-right fs-lg animate-target"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 g-0 overflow-hidden rounded-5">
+
+                <!-- Binded images (controlled slider) -->
+                <div class="col order-md-2 user-select-none">
+                  <div class="swiper h-100" id="images" data-swiper="{
+                    &quot;allowTouchMove&quot;: false,
+                    &quot;loop&quot;: true,
+                    &quot;effect&quot;: &quot;fade&quot;
+                  }">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9"></div>
+                        <img src="./user/assets/img/blog/grid/v1/slider01.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9"></div>
+                        <img src="./user/assets/img/blog/grid/v1/slider02.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Text slider -->
+                <div class="col bg-dark order-md-1 py-5 px-4 px-sm-5" data-bs-theme="dark">
+                  <div class="swiper py-sm-2 py-md-3 my-xl-2 my-xxl-3" data-swiper="{
+                    &quot;spaceBetween&quot;: 40,
+                    &quot;loop&quot;: true,
+                    &quot;speed&quot;: 400,
+                    &quot;controlSlider&quot;: &quot;#images&quot;,
+                    &quot;navigation&quot;: {
+                      &quot;prevEl&quot;: &quot;#prev-post&quot;,
+                      &quot;nextEl&quot;: &quot;#next-post&quot;
+                    }
+                  }">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <h3 class="h5">The role of philanthropy in building a better world</h3>
+                        <p class="text-body fs-sm pb-4">Charitable contributions are a vital aspect of building a better world. These contributions come in various forms, including monetary donations, volunteering time, providing expertise...</p>
+                        <a class="btn btn-outline-light" href="/home_page">Read more</a>
+                      </div>
+                      <div class="swiper-slide">
+                        <h3 class="h5">Supporting communities through charitable giving</h3>
+                        <p class="text-body fs-sm pb-4">Join us on a journey of generosity as we spotlight the transformative power of charitable contributions. In this section, we celebrate the stories of impact made possible by your...</p>
+                        <a class="btn btn-outline-light" href="/home_page">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Posts grid -->
+            <div class="row row-cols-1 row-cols-sm-2 gy-5 pb-2 pb-sm-0">
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNob3BwaW5nfGVufDB8fDB8fHww" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+                 
+                 
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://media.istockphoto.com/id/2167456639/photo/happy-woman-trying-sweater-vest-shopping-at-thrift-store.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=XTaAeo2gAmwSbDJdo9iFh531rFqmyOaSSY8i3cu7Q24=" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+                
+                
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://media.istockphoto.com/id/933154330/photo/variety-of-assortment-of-modern-cosmetics-store.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=mhQbstNmKSho41SLfk7UDoqIx-QJub2gnR4R19B_HUY=" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+              
+                
+                </div>
+              </article>
+
+              <!-- Article -->
+              <article class="col">
+                <a class="ratio d-flex hover-effect-scale rounded overflow-hidden" href="/home_page" style="--cz-aspect-ratio: calc(305 / 416 * 100%)">
+                  <img src="https://media.istockphoto.com/id/1227414534/photo/lipsticks.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=G_1FPMjf2DBRsCID1p07q8Y0JXVYydTAeoni8yhWdiM=" class="hover-effect-target" alt="Image">
+                </a>
+                <div class="pt-4">
+              
+               
+                </div>
+              </article>
+            </div>
+            <hr class="mt-4 mt-sm-5">
+
+            <!-- Pagination -->
+            <nav aria-label="Blog pages">
+              <ul class="pagination pagination-lg">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">
+                    1
+                    <span class="visually-hidden">(current)</span>
+                  </span>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <!-- Sticky sidebar that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+          <aside class="col-lg-4 col-xl-3 offset-xl-1" style="margin-top: -115px">
+            <div class="offcanvas-lg offcanvas-end sticky-lg-top ps-lg-4 ps-xl-0" id="blogSidebar">
+              <div class="d-none d-lg-block" style="height: 115px"></div>
+              <div class="offcanvas-header py-3">
+                <h5 class="offcanvas-title">Sidebar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#blogSidebar" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-block pt-2 py-lg-0">
+                <h4 class="h6 mb-4">Blog categories</h4>
+                <div class="d-flex flex-wrap gap-3">
+                  <a class="btn btn-outline-secondary px-3" href="#!">jewellery</a>
+                  <a class="btn btn-outline-secondary px-3" href="#!">Dress</a>
+                  <a class="btn btn-outline-secondary px-3" href="#!">Makeup</a>
+                  <a class="btn btn-outline-secondary px-3" href="#!">Shoes</a>
+                 
+                </div>
+                <h4 class="h6 pt-5 mb-0">Trending posts</h4>
+               <!-- Trending Blog 1 -->
+<article id="trendingBlog1" class="hover-effect-scale position-relative d-flex align-items-center border-bottom py-4">
+  <div class="w-100 pe-3">
+    <h3 class="h6 lh-base fs-sm mb-0">
+      <a class="hover-effect-underline stretched-link trending-desc" href="/home_page">The role of philanthropy in building a better world</a>
+    </h3>
+  </div>
+  <div class="ratio w-100" style="max-width: 86px; --cz-aspect-ratio: calc(64 / 86 * 100%)">
+    <img src="./user/assets/img/blog/grid/v1/th01.jpg" class="rounded-2 trending-img" alt="Image">
+  </div>
+</article>
+
+<!-- Trending Blog 2 -->
+<article id="trendingBlog2" class="hover-effect-scale position-relative d-flex align-items-center border-bottom py-4">
+  <div class="w-100 pe-3">
+    <h3 class="h6 lh-base fs-sm mb-0">
+      <a class="hover-effect-underline stretched-link trending-desc" href="/home_page">The biggest prospects for the smart home electronics industry</a>
+    </h3>
+  </div>
+  <div class="ratio w-100" style="max-width: 86px; --cz-aspect-ratio: calc(64 / 86 * 100%)">
+    <img src="./user/assets/img/blog/grid/v1/th02.jpg" class="rounded-2 trending-img" alt="Image">
+  </div>
+</article>
+
+<!-- Trending Blog 3 -->
+<article id="trendingBlog3" class="hover-effect-scale position-relative d-flex align-items-center py-4">
+  <div class="w-100 pe-3">
+    <h3 class="h6 lh-base fs-sm mb-0">
+      <a class="hover-effect-underline stretched-link trending-desc" href="/home_page">Behind-the-scenes stories from the world of iPhones</a>
+    </h3>
+  </div>
+  <div class="ratio w-100" style="max-width: 86px; --cz-aspect-ratio: calc(64 / 86 * 100%)">
+    <img src="./user/assets/img/blog/grid/v1/th03.jpg" class="rounded-2 trending-img" alt="Image">
+  </div>
+</article>
+
+              
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+
+      <!-- Video reviews -->
+   
+    </main>
+
+
+    <!-- Page footer -->
+   <footer class="footer pt-5 pb-4">
+      <div class="container pt-sm-2 pt-md-3 pt-lg-4">
+        <div class="row pb-5 mb-lg-3">
+
+          <!-- Columns with links that are turned into accordion on screens < 500px wide (sm breakpoint) -->
+          <div class="col-md-8 col-xl-7 pb-2 pb-md-0 mb-4 mb-md-0 mt-n3 mt-sm-0">
+            <div class="accordion" id="footerLinks">
+              <div class="row row-cols-1 row-cols-sm-3">
+                <div class="accordion-item col border-0">
+                  <h6 class="accordion-header" id="categoriesHeading">
+                    <span class="text-dark-emphasis d-none d-sm-block">Categories</span>
+                    <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#categoriesLinks" aria-expanded="false" aria-controls="categoriesLinks">Categories</button>
+                  </h6>
+                  <div class="accordion-collapse collapse d-sm-block" id="categoriesLinks" aria-labelledby="categoriesHeading" data-bs-parent="#footerLinks">
+                    <ul class="nav flex-column gap-2 pt-sm-3 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_MakeUp">Makeup Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Jewllery">Jewllery Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_dress">Dress Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="/shopnow_Shows">Shoes Products</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Sale</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="d-sm-none my-0">
+                </div>
+                <div class="accordion-item col border-0">
+                  <h6 class="accordion-header" id="accountHeading">
+                    <span class="text-dark-emphasis d-none d-sm-block">Account</span>
+                    <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#accountLinks" aria-expanded="false" aria-controls="accountLinks">Account</button>
+                  </h6>
+                  <div class="accordion-collapse collapse d-sm-block" id="accountLinks" aria-labelledby="accountHeading" data-bs-parent="#footerLinks">
+                    <ul class="nav flex-column gap-2 pt-sm-3 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Your account</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Shipping &amp; policies</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Refunds &amp; replacements</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Order tracking</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Delivery info</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Taxes &amp; fees</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="d-sm-none my-0">
+                </div>
+                <div class="accordion-item col border-0">
+                  <h6 class="accordion-header" id="customerHeading">
+                    <span class="text-dark-emphasis d-none d-sm-block">Customer service</span>
+                    <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#customerLinks" aria-expanded="false" aria-controls="customerLinks">Customer service</button>
+                  </h6>
+                  <div class="accordion-collapse collapse d-sm-block" id="customerLinks" aria-labelledby="customerHeading" data-bs-parent="#footerLinks">
+                    <ul class="nav flex-column gap-2 pt-sm-3 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Payment methods</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Money back guarantee</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Refunds &amp; replacements</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Product returns</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Support center</a>
+                      </li>
+                      <li class="d-flex w-100 pt-1">
+                        <a class="nav-link animate-underline animate-target d-inline fw-normal text-truncate p-0" href="#!">Shipping</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="d-sm-none my-0">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subscription -->
+          <div class="col-md-4 offset-xl-1">
+            <h6 class="mb-4">Join us and stay up to date</h6>
+            <form class="needs-validation" novalidate="">
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="check-woman" checked="">
+                <label for="check-woman" class="form-check-label">Woman</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="check-man">
+                <label for="check-man" class="form-check-label">Man</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="check-sale">
+                <label for="check-sale" class="form-check-label">Sale</label>
+              </div>
+              <div class="position-relative mt-3">
+                <input type="email" class="form-control form-control-lg bg-image-none text-start" placeholder="Enter email" aria-label="Your email address" required="">
+                <div class="invalid-tooltip bg-transparent p-0">Please enter your email address!</div>
+                <button type="submit" class="btn btn-icon btn-ghost fs-xl btn-secondary border-0 position-absolute top-0 end-0 mt-1 me-1" aria-label="Submit your email address">
+                  <i class="ci-arrow-up-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Social account links -->
+      
+
+        <!-- Copyright + Payment methods -->
+        <div class="d-lg-flex align-items-center border-top pt-4 mt-3">
+          <div class="d-flex gap-2 gap-sm-3 justify-content-center ms-lg-auto mb-3 mb-md-4 mb-lg-0 order-lg-2">
+            <div>
+              <img src="./user/assets/img/payment-methods/visa-light-mode.svg" class="d-none-dark" alt="Visa">
+              <img src="./user/assets/img/payment-methods/visa-dark-mode.svg" class="d-none d-block-dark" alt="Visa">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/paypal-light-mode.svg" class="d-none-dark" alt="PayPal">
+              <img src="./user/assets/img/payment-methods/paypal-dark-mode.svg" class="d-none d-block-dark" alt="PayPal">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/mastercard.svg" alt="Mastercard">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/google-pay-light-mode.svg" class="d-none-dark" alt="Google Pay">
+              <img src="./user/assets/img/payment-methods/google-pay-dark-mode.svg" class="d-none d-block-dark" alt="Google Pay">
+            </div>
+            <div>
+              <img src="./user/assets/img/payment-methods/apple-pay-light-mode.svg" class="d-none-dark" alt="Apple Pay">
+              <img src="./user/assets/img/payment-methods/apple-pay-dark-mode.svg" class="d-none d-block-dark" alt="Apple Pay">
+            </div>
+          </div>
+          <div class="d-md-flex justify-content-center order-lg-1">
+            <ul class="nav justify-content-center gap-4 order-md-3 mb-4 mb-md-0">
+              <li class="animate-underline">
+                <a class="nav-link fs-xs fw-normal p-0 animate-target" href="#!">Privacy</a>
+              </li>
+              <li class="animate-underline">
+                <a class="nav-link fs-xs fw-normal p-0 animate-target" href="#!">Affiliates</a>
+              </li>
+              <li class="animate-underline">
+                <a class="nav-link fs-xs fw-normal p-0 animate-target" href="#!">Terms of use</a>
+              </li>
+            </ul>
+            <div class="vr text-body-secondary opacity-25 mx-4 d-none d-md-inline-block order-md-2"></div>
+            <p class="fs-xs text-center text-lg-start mb-0 order-md-1">
+              © All rights reserved. Made by <span class="animate-underline"><a class="animate-target text-dark-emphasis text-decoration-none" href="https://createx.studio/" target="_blank" rel="noreferrer">Createx Studio</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Blog sidebar offcanvas toggle that is visible on screens < 992px wide (lg breakpoint) -->
+    <button type="button" class="fixed-bottom z-sticky w-100 btn btn-lg btn-dark border-0 border-top border-light border-opacity-10 rounded-0 pb-4 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#blogSidebar" aria-controls="blogSidebar" data-bs-theme="light">
+      <i class="ci-sidebar fs-base me-2"></i>
+      Sidebar
+    </button>
+
+
+    <!-- Back to top button -->
+    <div class="floating-buttons position-fixed top-50 end-0 z-sticky me-3 me-xl-4 pb-4">
+      <a class="btn-scroll-top btn btn-sm bg-body border-0 rounded-pill shadow animate-slide-end" href="#top">
+        Top
+        <i class="ci-arrow-right fs-base ms-1 me-n1 animate-target"></i>
+        <span class="position-absolute top-0 start-0 w-100 h-100 border rounded-pill z-0"></span>
+        <svg class="position-absolute top-0 start-0 w-100 h-100 z-1" viewBox="0 0 62 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x=".75" y=".75" width="60.5" height="30.5" rx="15.25" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></rect>
+        </svg>
+      </a>
+      <a class="btn btn-sm btn-outline-secondary text-uppercase bg-body rounded-pill shadow animate-rotate ms-2 me-n5" href="#customizer" style="font-size: .625rem; letter-spacing: .05rem;" data-bs-toggle="offcanvas" role="button" aria-controls="customizer">
+        Customize<i class="ci-settings fs-base ms-1 me-n2 animate-target"></i>
+      </a>
+    </div>
+
+
+    <!-- Vendor scripts -->
+    <script src="./user/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="./user/assets/js/theme.min.js"></script>
+ <script>
+  async function loadBlogData() {
+    try {
+      const res = await fetch('http://localhost:3000/getAllBlogPosts');
+      const result = await res.json();
+
+      if (result.success) {
+        const posts = result.posts;
+
+        posts.forEach((post, index) => {
+          const { date, description, imagePath } = post;
+
+          if (index < 3) {
+            // Main blogs
+            const article = document.getElementById(`mainBlog${index + 1}`);
+            if (article) {
+              const dateEl = article.querySelector('.blog-date');
+              const descEl = article.querySelector('.blog-desc');
+              const imgEl = article.querySelector('.blog-img');
+
+              if (dateEl) dateEl.textContent = date;
+              if (descEl) descEl.textContent = description;
+              if (imgEl) imgEl.src = imagePath;
+            }
+          } else if (index >= 3 && index < 6) {
+            // Trending blogs
+            const trendingIndex = index - 3;
+            const trending = document.getElementById(`trendingBlog${trendingIndex + 1}`);
+            if (trending) {
+              const descEl = trending.querySelector('.trending-desc');
+              const imgEl = trending.querySelector('.trending-img');
+
+              if (descEl) descEl.textContent = description;
+              if (imgEl) imgEl.src = imagePath;
+            }
+          }
+        });
+
+      } else {
+        console.warn('⚠️ No blog posts found');
+      }
+
+    } catch (err) {
+      console.error('❌ Error loading blog posts:', err);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', loadBlogData);
+</script>
+
+
+  
+
+</body>
+<!-- Mirrored from cartzilla-html.createx.studio/blog-grid-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Apr 2025 06:03:14 GMT -->
+</html>
